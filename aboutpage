@@ -84,8 +84,8 @@
 
 
 			<div>
-				<img class="guy" src="Images/guy.jpg" width="12%">
-						<p class="abouttext">
+				<img src="Images/guy.jpg" width="12%">
+						<p >
 							<b> Eddy Ye – General Manager </b> <br>
 									Co-founder of  United Image System (Beijing), has raised 21 million dollars in venture capital, has developed color Doppler ultrasound and MRI imaging products selling in China and world market. 
 									Developed medical instruments for 20 years in Silicon Valley, United States and China. Former U-Systems and R & D Director of Engineering GE Diasonics.  Proficient in Chinese CFDA product registration process
@@ -94,8 +94,8 @@
 			</div>
 			<div>
 
-				<img class="guy" src="Images/frantz.png" width="20%" >
-					<p class="abouttext" style="margin-bottom: 4%;">
+				<img src="Images/frantz.png" width="20%" >
+					<p>
 							<b>Dr Frantz Lohier – Chief Imaging Officer </b> <br>
 									20 years of Consumer Electronics experience with companies such as Samsung, Qualcomm and Logitech
 									Held VP position in Intellectual Property management and licensing
