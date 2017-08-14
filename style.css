@@ -1,37 +1,142 @@
-body UL LI:nth-child(2n+1){
-	font-size: 4;
+* {
+margin:0;
+
 }
 
-input[type="button"][value$="ws"]{
-	width: 30%;
+input[type="button"]{
+padding: 1.25% 2.5%;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 0px;
+background-color: Transparent;
+border-color: white;
+border-style: solid;
+border-width: 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+padding: 1.25% 2.5%;
+
 }
 
-input[type="image"][src^="Images/Logos/WhiteR"]{
-	width: 30%; height: 20%;
+
+input[type="button"], input[type="submit"] {
+min-width: 10px;
+font-size: 17px;
+color: #ffffff;
+margin-right: 0px;
+text-align: center;
+display: inline;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+font-weight: bold;
 }
 
-.images DIV:nth-child(1) IMG{
-	width: 10%;
-	color:red;
-	float: left;
+
+footer {
+background: #404040
 }
+
+
+header {
+   background-color: #404040;
+}
+
+
+
+input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
+	width: 6%;
+    height: 8%;
+    margin-left: 10%;
+    float: left;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+
+/* EVERYTHING FOOTER RELATED GOES UNDER HERE */
+footer {
+position: absolute;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    float: left;
+
+
+
+}
+footer IMG {
+ color: white;
+    text-decoration: none;
+    width: 3%;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    opacity: 0.7;
+}
+
+
+
+footer IMG:hover {
+cursor: pointer;
+opacity: 1;
+}
+
+
+
+footer DIV:nth-child(2) DIV:nth-child(1){
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 2px;
+float: left;
+padding-left: 17%;
+text-decoration: none;
+font-weight: bold;
+color: white;
+opacity: 0.7;
+margin-top: 2%;
+}
+
+
+footer UL {
+list-style: none;
+    float: left;
+    margin-left: 13%;
+    margin-bottom: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-decoration: none;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-top: 1%;
+
+
+}
+
+
+
+/* END OF FOOTER */
+
+
+ 
+
+
+/* MEDIA QUERIE OR HOWEVER YOU SPELL THAT */
 
 @media (min-width: 901px){
 
-.images DIV:nth-child(1) IMG{
-	width: 40%;
-	color:blue;
-	float: left;
 }
 
 }
 
 @media (max-width: 900px){
 
-.images DIV:nth-child(1) IMG{
-	width: 10%;
-	color:red;
-	float: left;
 }
 
 }
