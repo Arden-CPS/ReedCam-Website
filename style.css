@@ -161,7 +161,7 @@ width: 100%;
 footer UL {
 list-style: none;
     float: left;
-    margin-left: 4%;
+    margin-left: 5.2%;
     margin-bottom: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 17px;
@@ -181,7 +181,7 @@ width: 20%;
 footer DIV:nth-child(3) UL:nth-child(2){
 	float: left;
     width: 12%;
-    margin-left: 25%;
+   margin-left: 20.9%;
     padding-left: 0%;
   
 }
