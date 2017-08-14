@@ -13,6 +13,13 @@ a {
 
 /* EVERYTHING HEADER RELATED GOES UNDER HERE */
 
+input[type="button"][onClick$="support.html\'"] {
+color: black;
+background-color: whitesmoke;
+border-color: white;
+}
+
+
 input[type="button"]{
 padding: 1.25% 2.5%;
 text-align: center;
@@ -50,6 +57,8 @@ font-weight: bold;
 }
 
 
+
+
 footer {
 background: #404040
 }
@@ -70,10 +79,10 @@ padding-bottom: 2%;
 input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 	width: 6%;
     height: 8%;
-    margin-left: 10%;
+    margin-left: 1%;
     float: left;
     margin-top: 1%;
-    margin-right: 5%;
+    margin-right: 2%;
 }
 
 
@@ -90,13 +99,22 @@ position: absolute;
 
 
 }
+
+
+footer DIV:nth-child(1){
+
+width: 20%;
+
+}
 footer IMG {
- color: white;
+color: white;
     text-decoration: none;
-    width: 3%;
+    width: 15%;
     margin-left: 3%;
     margin-top: 1.5%;
     opacity: 0.7;
+    padding: 4%;
+    float: left;
 }
 
 
@@ -113,30 +131,37 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: 20px;
 text-transform: uppercase;
 letter-spacing: 2px;
-float: left;
-padding-left: 20%;
 text-decoration: none;
 font-weight: bold;
 color: white;
 opacity: 0.7;
-margin-top: 2%;
-margin:0%;
-padding-top: 2%;
+margin: 0;
+
+ float: left;
+    padding-left: 8%;
+    margin-top: 1.5%;
     
 }
 
 footer DIV:nth-child(2) {
-   margin-top: -5%;
-       overflow: overlay;
-    margin-left: 30%;
+ 
 
 }
+
+
+footer DIV:nth-child(3) UL:nth-child(2) LI {
+padding-left: 25%;
+width: 100%;
+
+}
+
+
 
 
 footer UL {
 list-style: none;
     float: left;
-    margin-left: 13%;
+    margin-left: 4%;
     margin-bottom: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 17px;
@@ -147,7 +172,7 @@ list-style: none;
     cursor: pointer;
     margin-top: 1%;
 width: 20%;
-    margin-left: 41.2%;
+  
 
 }
 
@@ -156,8 +181,8 @@ width: 20%;
 footer DIV:nth-child(3) UL:nth-child(2){
 	float: left;
     width: 12%;
-    margin-left: 0%;
-    padding-left: 21%;
+    margin-left: 25%;
+    padding-left: 0%;
   
 }
 
