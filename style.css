@@ -1,0 +1,37 @@
+body UL LI:nth-child(2n+1){
+	font-size: 4;
+}
+
+input[type="button"][value$="ws"]{
+	width: 30%;
+}
+
+input[type="image"][src^="Images/Logos/WhiteR"]{
+	width: 30%; height: 20%;
+}
+
+.images DIV:nth-child(1) IMG{
+	width: 10%;
+	color:red;
+	float: left;
+}
+
+@media (min-width: 901px){
+
+.images DIV:nth-child(1) IMG{
+	width: 40%;
+	color:blue;
+	float: left;
+}
+
+}
+
+@media (max-width: 900px){
+
+.images DIV:nth-child(1) IMG{
+	width: 10%;
+	color:red;
+	float: left;
+}
+
+}
