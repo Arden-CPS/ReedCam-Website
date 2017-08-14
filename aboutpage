@@ -26,17 +26,17 @@
 	
 
 	<!-- SLIDESHOW -->
-	<div>
-   			 <div>
-       			 <img src="Images/pic1.jpg" id="backgroundImage" width="100%" height="400px" >
-    		</div>
-    		 <div>
-      			  <img src="Images/pic2.jpg" id="backgroundImage" width="100%" height="400px" >
-   			 </div>
-   			  <div>
-      			  <img src="Images/pic3.jpg" id="backgroundImage" width="100%" height="400px" >
-   			 </div>
-   		 </div>
+	<div class="slideshow">
+    <div>
+        <img src="Images/pic1.jpg" id="backgroundImage" width="100%" height="400px" style="margin-right: auto; margin-left: auto;">
+    </div>
+     <div>
+        <img src="Images/pic2.jpg" id="backgroundImage" width="100%" height="400px" style="margin-right: auto; margin-left: auto;">
+    </div>
+     <div>
+        <img src="Images/pic3.jpg" id="backgroundImage" width="100%" height="400px" style="margin-right: auto; margin-left: auto;">
+    </div>
+    </div>
 <!-- END SLIDESHOW -->
 
 <!-- START VALUES SECTION (THAT EXPAND HORIZONTALLY ON HOVER) -->
