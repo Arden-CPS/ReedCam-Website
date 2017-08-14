@@ -3,6 +3,16 @@ margin:0;
 
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* EVERYTHING HEADER RELATED GOES UNDER HERE */
+
 input[type="button"]{
 padding: 1.25% 2.5%;
 text-align: center;
@@ -15,6 +25,8 @@ border-style: solid;
 border-width: 2px;
 transition-duration: 0.4s;
 cursor: pointer;
+padding: 1.25% 2.5%;
+margin-top: 2%;
 padding: 1.25% 2.5%;
 
 }
@@ -48,6 +60,12 @@ header {
 }
 
 
+header DIV:nth-child(2) {
+padding-bottom: 2%;
+
+
+}
+
 
 input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 	width: 6%;
@@ -57,6 +75,9 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
     margin-top: 1%;
     margin-right: 5%;
 }
+
+
+/* EVERYTHING HEADER RELATED GOES ^^^^^^ */
 
 /* EVERYTHING FOOTER RELATED GOES UNDER HERE */
 footer {
@@ -87,18 +108,28 @@ opacity: 1;
 
 
 
-footer DIV:nth-child(2) DIV:nth-child(1){
+footer DIV:nth-child(2) DIV {
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: 20px;
 text-transform: uppercase;
 letter-spacing: 2px;
 float: left;
-padding-left: 17%;
+padding-left: 20%;
 text-decoration: none;
 font-weight: bold;
 color: white;
 opacity: 0.7;
 margin-top: 2%;
+margin:0%;
+padding-top: 2%;
+    
+}
+
+footer DIV:nth-child(2) {
+   margin-top: -5%;
+       overflow: overlay;
+    margin-left: 30%;
+
 }
 
 
@@ -115,13 +146,27 @@ list-style: none;
     opacity: 0.7;
     cursor: pointer;
     margin-top: 1%;
-
+width: 20%;
+    margin-left: 41.2%;
 
 }
 
 
 
+footer DIV:nth-child(3) UL:nth-child(2){
+	float: left;
+    width: 12%;
+    margin-left: 0%;
+    padding-left: 21%;
+  
+}
+
+
+
 /* END OF FOOTER */
+
+
+
 
 
  
