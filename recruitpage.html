@@ -16,63 +16,63 @@
 <body>
 <!--Header buttons no grey background-->
 <div class="no_background_buttons">
-    <input type="image" src="Images/Logos/BlackReedLogo.png" onClick="parent.location='homepage.html'">
-
-			<input  type=button onClick="parent.location='global.html'" value='Global'>
-			<input  type=button onClick="parent.location='newspage.html'" value='News'>
-			<input  type=button onClick="parent.location='productspage.html'" value='Products'>
-			<input  type=button onClick="parent.location='aboutpage.html'"  value='About Us'>
-			<input  type=button onClick="parent.location='recruitpage.html'" value='recruitment'>
-			<input  type=button onClick="parent.location='contact.html'" value='contact Us'>
+   			<div>
+   				<input type="image" src="Images/Logos/WhiteReedLogo.png" onClick="parent.location='homepage.html'">
+   			</div>
+   			<div>
+				<input  type=button onClick="parent.location='global.html'" value='Global'>
+				<input  type=button onClick="parent.location='newspage.html'" value='News'>
+				<input  type=button onClick="parent.location='productspage.html'" value='Products'>
+				<input  type=button onClick="parent.location='aboutpage.html'"  value='About Us'>
+				<input  type=button onClick="parent.location='recruitpage.html'" value='recruitment'>
+				<input  type=button onClick="parent.location='contact.html'" value='contact Us'>
+				<input  type=button onClick="parent.location='support.html'" value='support'>
+			</div>
 </div>
-<img src="Images/Test_Images/test1.jpg">
-<!--Fade and slide in on load of page-->
-<h1>Join Our Team</h1>
-<!--On hover activate this-->
-<p>Reed Medical has thrived since 2016!</p>
+<div> 
+	<img src="Images/Test_Images/test1.jpg">
+
+	<!--Fade and slide in on load of page-->
+	<h1>Join Our Team</h1>
+	<!--On hover ^ activate this-->
+	<p>Reed Medical has thrived since 2016!</p>
+</div>
 
 
 <!--Icons *floating with background Image-->
-<div>
-	
-	<div>
-		<img src="Images/Icons/bus.png">
-		<br>
-		<p>ReedCam gives free transportation</p>
-	</div>
-	<div>
-		<img src="Images/Icons/food.png">
-		<br>
-		<p>ReedCam offers free meals</p>
-	</div>
-	<div>
-		<img src="Images/Icons/calendar.png">
-		<br>
-		<p>ReedCam offers paid vacation</p>
-	</div>
-	<div>
-		<img src="Images/Icons/list.png">
-		<br>
-		<p>You get things done at Reedcam</p>
-	</div>
-	<div>
-		<img src="Images/Icons/beer.png">
-		<br>
-		<p>ReedCam lets you socialize with coworkers</p>
-	</div>
-	
-	<div>
-		<img src="Images/Icons/community.svg">
-		<br>
-		<p>Join a thriving community</p>
-	</div>
-	
+<div class="perksBlock">
+		<div>
+			<img src="Images/Icons/bus.png">
+			Reedcam offers Transportation to all of its employees
+		</div>
+		<div>
+			<img src="Images/Icons/list.png">
+			Reedcam lets you work efficiently
+		</div>
+		<div>
+			<img src="Images/Icons/calendar.png">
+			Reedcam gives you free Vacation
+		</div>
+		<div>
+			<img src="Images/Icons/food.png">
+			Reedcam gives you RICE!
+		</div>
+		<div>
+			<img src="Images/Icons/beer.png">
+			Reedcam is a thriving community
+		</div>
+		<div>
+			<img src="Images/Icons/community.svg">
+			Reedcam gets you fun
+		</div>
 </div>
+
 <!--On hover over h3 elements, displays bottom div, also same formatting for icons as above, showing perks unique to the job-->
-<div>
+<div class="job_description">
 	<ul>
 		<li>
 			<h3>Job #1: Security Analyst</h3>
+		</li>
 			<div>
 				<img src="Images/Test_Images/math.jpg">
 				<p>This is what a secutiy Analyst Does and who we are looking for:</p>
@@ -94,11 +94,10 @@
 					</form>
 				</div>
 			</div>
-		</li>
-		<li>
+		<li>	
 			<h3>Job #2: Janitor</h3>
+		</li>
 			<div>
-			<!--Each of these images is a stock photo of a worker on the job-->
 				<img src="Images/janitor.jpg">
 				<p>This is what a Janitor Does and who we are looking for:</p>
 				<ul>
@@ -119,9 +118,9 @@
 					</form>
 				</div>
 			</div>
-		</li>
 		<li>
 			<h3>Job #3: Data Analyst</h3>
+		</li>
 			<div>
 				<img src="Images/programmer.jpg">
 				<p>This is what a secutiy Analyst Does and who we are looking for:</p>
@@ -143,10 +142,11 @@
 					</form>
 				</div>
 			</div>
-		</li>
-	</ul>
+		</ul>
 </div>
+
 </body>
+<!--
 <footer>
     <div>
         <a href="facebook.com"> <img class ="icons" src="Images/Icons/facebook.png"> </a> 
@@ -176,7 +176,7 @@
         </ul>
     </div>
 </footer>
-
+-->
 </html>
 
 
