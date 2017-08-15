@@ -374,6 +374,68 @@ body > DIV:nth-child(2) H1{
 /* END RECRUIT PAGE */
 
 
+/* TABS FUNCTIONALITY */
+
+.tabs > DIV SPAN {
+  
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color:black;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+
+
+.tabs > DIV {
+  margin-top: 10px;
+  background: white;
+  width: 70%;
+  max-height: 700px;
+  margin-left: 15%;
+}
+
+
+.tabs UL.horizontal {
+margin-left: 12.5%;
+}
+
+.tabs LI {
+  background: white;
+  
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+
+.tabs LI:hover {
+  background: #404040;
+}
+
+.tabs A {
+    color: black;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tabs LI:hover A {
+  color: white;
+}
+
+/* END TABS FUNCTIONALITY */
+
 /* MEDIA QUERIE OR HOWEVER YOU SPELL THAT */
 
 @media (min-width: 901px){
