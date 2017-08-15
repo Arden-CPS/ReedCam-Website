@@ -26,6 +26,11 @@ body {
 ul {padding: 0;}
 ul LI { list-style-type: none; }
 
+p {
+    font-size: 1.5vw;
+}
+
+
 /* END GENERAL TAGS */
 
 
@@ -77,10 +82,6 @@ font-weight: bold;
 
 
 
-footer {
-background: #404040
-}
-
 
 header {
    background-color: #404040;
@@ -106,7 +107,54 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 
 /* END HEADER */
 
+
+/* BODY AREA */
+.container {
+   height: auto;
+   overflow: hidden;
+}
+
+.right {
+    width: 50%;
+    float: right;
+   
+}
+
+.left {
+    float: none; /* not needed, just for clarification */
+  
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+
+}
+
+
+.container P {
+	    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+    margin:0;
+}
+
+.container P:nth-child(1){
+	    padding-top: 16.5%;
+    padding-bottom: 17.2%;
+    margin:0;
+}
+
+
+
+/* END BODY AREA */
+
+
 /* FOOTER */
+
+footer {
+background: #404040
+}
+
+
+
 footer {
 position: absolute;
     left: 0;
