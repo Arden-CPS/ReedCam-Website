@@ -7,11 +7,19 @@
 
 			<link rel="stylesheet" type="text/css" href="style.css">
   			<link rel="stylesheet" type="text/css" href="slick/slick.css">
+			<script type="text/javascript" src="main.js"></script>
 
-			<!--Load up JQuery CDN-->
+<!--Load up JQuery CDN-->
 			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
   			<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-			<script type="text/javascript" src="main.js"></script>			
+
+<!--    -->
+
+
+
+
+<!--    -->
+		
 		</head>
 
 <header>
@@ -28,6 +36,8 @@
 			<input  type=button onClick="parent.location='contact.html'" value='contact Us'>
 			<input  type=button onClick="parent.location='support.html'" value='support'>
 </div>
+
+
 </header>
 
 
@@ -78,33 +88,129 @@
 				</div>
 
 			<div>
+
+
+
+
+
+<!--                                                       -->
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
 				
-			
+
+<style>
+.test11 {
+max-width: 40%;
+max-height: 350px;
+display: block;
+overflow: hidden;
+
+}
+
+.test11:hover{
+max-height: 800px;
+
+}
+
+</style>
+
+
 
 <!-- REMAINING INFO IN THREE SECTIONS THAT EXPAND ON HOVER -->
+<style>
 
-			<div class="infotext">
-				<div>
-					<p> Environmental Concern </p>
-						<img src="Images/ALI.png" width="10%">
-								<p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
-				</div>
-				<div>
-						<p> Safety </p>
-						<img src="Images/ALI.png" width="10%">
-								<p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
-				</div>
-				<div>
+.w3-red,.w3-hover-red:hover{color:#404040!important;
+	background-color:#404040!important
+	width:400px;
 
-					<p> Public Health </p>
-						<img src="Images/ALI.png" width="10%">
-								<p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
-				</div>
-			</div>
+}
+
+.w3-bar .w3-bar-item{
+	
+	float:left;
+	width:33%;
+	border:none;
+	outline:none;
+	display:block;
+	padding:0;
+	height: auto;
+	
+	}
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+.w3-bar .w3-button {
+    white-space: normal;
+}
+
+.w3-button:hover {
+    opacity: 0.7;
+}
 
 
-	</div>
-<br style="clear:both">
+
+</style>
+
+<div class="w3-bar w3-black" >
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')"> <img style="height:300px" src="Images/test1.jpg"> THING1</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')"> <img style="height:300px" src="Images/test2.jpg"> THING2</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')"><img style="height:300px" src="Images/test5.jpg"> THING3</button>
+  </div>
+  
+  <div id="London" class="w3-container w3-border city">
+    <h2>THING1</h2>
+    <p>Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
+  </div>
+
+  <div id="Paris" class="w3-container w3-border city" style="display:none">
+    <h2>THING2</h2>
+    <p>Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p> 
+  </div>
+
+  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+    <h2>THING3</h2>
+    <p>Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
 
 <!-- END VALUES SECTION -->
 

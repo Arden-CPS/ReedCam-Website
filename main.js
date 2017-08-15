@@ -1,3 +1,5 @@
+
+
 function changeButtonColor(buttonID){
 	var selected_button = document.getElementById(buttonID);
 	selected_button.style.color = "black";
@@ -33,6 +35,7 @@ $(document).ready(function(){
         pauseOnHover: true,
     });
 
+
     generalQuestions.hide();
 	productInquiry.hide();
 	becomePartener.hide();
@@ -59,7 +62,7 @@ $(document).ready(function(){
 	});
 	$('.scalable_columns > DIV:nth-child(1)').on('click', function(){
 		$(this).animate({ 
-			width: 32%, 
+			width: 32%,
 			fontSize: '20px'
 			}, 1000, function() { 
 				$(this).remove();

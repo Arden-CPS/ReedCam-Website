@@ -8,6 +8,7 @@
   			<link rel="stylesheet" type="text/css" href="slick/slick.css">
   			<link rel="stylesheet" type="text/css" href="Tablset/skeleton.css">
 
+
 			<!--Load up JQuery CDN-->
 			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
   			<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -33,6 +34,45 @@
 
 
 <!-- HEADER ^^^^^^ -->
+
+<style>
+
+.w3-red,.w3-hover-red:hover{color:#404040!important;
+	background-color:white!important}
+
+.w3-bar .w3-bar-item{
+	
+	float:left;
+	width:33%;
+	border:none;
+	outline:none;
+	display:block;
+	padding:0;
+	height: auto;
+	padding: 2%;
+	
+	}
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: white!important;
+    background-color: #000!important;
+}
+
+.w3-bar .w3-button {
+    white-space: normal;
+}
+
+.w3-button:hover {
+    opacity: 0.7;
+}
+
+
+
+</style>
 <!-- BODY  -->
 
 
@@ -60,17 +100,17 @@
 <!-- MAIN BODY -->
 
 		<div class="container">
-    <div class="right">
-    		<p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
+   				 <div class="right">
+    					<p> Something Important</p>
         <img  src="Images/Test_Images/test1.jpg" width="100%" > 
-        		<p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
+        		<p> Something Important</p>
 
 
     </div>
     <div class="left">
       
          <img  src="Images/Test_Images/test1.jpg" width="100%" > 
-        <p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
+        <p> Something Important</p>
         <img  src="Images/Test_Images/test1.jpg" width="100%" >
        
 
@@ -83,39 +123,53 @@
 
 	<!-- bottom bar with pages of products -->
 
-       <div class='tabs tabs_hover'>
-          <ul class='horizontal' style="width: 100%; margin-left: 0;">
-                <li><a href="#tab-1">Endoscope</a></li>
-                <li><a href="#tab-2">Hysteroscopes</a></li>
-                <li><a href="#tab-3">Cystoscopes</a></li>
-          </ul>
-                <div id='tab-1'><span>
-                    <img src="Images/Test_Images/test1.jpg" width="50%" height="50%">
-                    	<ul>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
+      
 
-                    	</ul>
-                </span></div>
-                <div id='tab-2'><span>
-                    <img src="Images/Test_Images/test1.jpg" width="50%" height="50%">
-                    <p> Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
-                </span></div>
-                <div id='tab-3'><span>
-                    <img src="Images/Test_Images/test1.jpg" width="50%" height="50%">
-                    <ul>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
-                    		<li>Thing</li>
 
-                    	</ul>
-                    </span></div>
-        </div>
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')"><h2>Endescopes</h2></button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')"><h2>Endescopes</h2></button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')"><h2> Endescopes </h2></button>
+  </div>
+  
+  <div id="London" class="w3-container w3-border city">
+		<img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="margin-left: -2%;
+    margin-bottom: -0.2%;">
+    
+  </div>
+
+  <div id="Paris" class="w3-container w3-border city" style="display:none">
+  		  <img src="Images/Test_Images/test2.jpg" id="backgroundImage" width="50%" style="margin-left: -2%;
+    margin-bottom: -0.2%;">
+    
+  </div>
+
+  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+   <img src="Images/Test_Images/test5.jpg" id="backgroundImage" width="50%" style="margin-left: -2%;
+    margin-bottom: -0.2%;">
+    
+  </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+
+     <!-- XXXXXXXXXX -->
+
 </body>
 
 
