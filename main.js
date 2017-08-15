@@ -1,3 +1,9 @@
+function changeButtonColor(buttonID){
+	var selected_button = document.getElementById(buttonID);
+	selected_button.style.color = "black";
+	selected_button.style.background = "white";
+}
+
 $(document).ready(function(){
 	var title = $('title').text();
 	switch(title){
@@ -8,7 +14,7 @@ $(document).ready(function(){
 		case "Recruitment": changeButtonColor('recruit_button'); break;
 		case "Contact Us": changeButtonColor('contact_button'); break;
 	}
-
+}
 
 
 
