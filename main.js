@@ -7,18 +7,24 @@ $(document).ready(function(){
 	productInquiry.hide();
 	becomePartener.hide();
 	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){ 
-		productInquiry.hide(animation_time);
-		becomePartener.hide(animation_time);
-		generalQuestions.show(animation_time);
+		productInquiry.fadeOut(animation_time, function(){
+			becomePartener.fadeOut(animation_time, function(){
+				generalQuestions.fadeIn(animation_time);
+			});
+		});
 	});
 	$('.contact-page-right-menu UL LI:nth-child(2)').on('click',function(){  
-		generalQuestions.hide(animation_time);
-		becomePartener.hide(animation_time);
-		productInquiry.show(animation_time);
+		generalQuestions.fadeOut(animation_time, function(){
+			becomePartener.fadeOut(animation_time, function(){
+				productInquiry.fadeIn(animation_time);
+			});
+		});
 	});
 	$('.contact-page-right-menu UL LI:nth-child(3)').on('click',function(){  
-		generalQuestions.hide(animation_time);
-		productInquiry.hide(animation_time);
-		becomePartener.show(animation_time);
+		productInquiry.fadeOut(animation_time, function(){
+			generalQuestions.fadeOut(animation_time, function(){
+				becomePartener.fadeIn(animation_time);
+			});
+		});
 	});
 });
