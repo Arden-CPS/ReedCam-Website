@@ -28,6 +28,11 @@ h3 {font-size: 20pt;}
 ul {padding: 0;}
 ul LI { list-style-type: none; }
 
+p {
+    font-size: 1.5vw;
+}
+
+
 /* END GENERAL TAGS */
 
 
@@ -79,10 +84,6 @@ font-weight: bold;
 
 
 
-footer {
-background: #404040
-}
-
 
 header {
    background-color: #404040;
@@ -108,7 +109,54 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 
 /* END HEADER */
 
+
+/* BODY AREA */
+.container {
+   height: auto;
+   overflow: hidden;
+}
+
+.right {
+    width: 50%;
+    float: right;
+   
+}
+
+.left {
+    float: none; /* not needed, just for clarification */
+  
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+
+}
+
+
+.container P {
+	    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+    margin:0;
+}
+
+.container P:nth-child(1){
+	    padding-top: 16.5%;
+    padding-bottom: 17.2%;
+    margin:0;
+}
+
+
+
+/* END BODY AREA */
+
+
 /* FOOTER */
+
+footer {
+background: #404040
+}
+
+
+
 footer {
 position: absolute;
     left: 0;
@@ -181,7 +229,7 @@ width: 100%;
 footer UL {
 list-style: none;
     float: left;
-    margin-left: 4%;
+    margin-left: 5.2%;
     margin-bottom: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 17px;
@@ -201,7 +249,7 @@ width: 20%;
 footer DIV:nth-child(3) UL:nth-child(2){
 	float: left;
     width: 12%;
-    margin-left: 25%;
+   margin-left: 20.9%;
     padding-left: 0%;
   
 }
