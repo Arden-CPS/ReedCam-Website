@@ -111,6 +111,8 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 
 
 /* BODY AREA */
+
+
 .container {
    height: auto;
    overflow: hidden;
@@ -146,6 +148,45 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 
 
 
+.container1 {
+
+	padding:0;
+	background-color: whitesmoke;
+}
+
+.left1 IMG {
+	float: none;
+	margin-left: 15%;
+	margin-bottom: 15%;
+	margin-top: 15%;
+}
+
+
+
+
+.right1 {
+
+	width: 80%;
+	float: right;
+}
+
+.left1 {
+
+	width: 20%;
+	float: none; /* not needed, just for clarification */
+  
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}
+.right1 P{
+padding-top: 7%;
+padding-bottom: 7%;
+margin:0;
+}
+
+
+
 /* END BODY AREA */
 
 
@@ -158,7 +199,7 @@ background: #404040
 
 
 footer {
-position: absolute;
+
     left: 0;
     height: 40%;
     width: 100%;
