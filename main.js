@@ -23,7 +23,7 @@ $(document).ready(function(){
 	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
 	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
 	var animation_time = 500;
-
+	alert('hi');
 	$('.slideshow').slick({
         autoplay: true,
         autoplaySpeed : 3000,
@@ -57,5 +57,30 @@ $(document).ready(function(){
 			});
 		});
 	});
+	$('.scalable_columns > DIV:nth-child(1)').on('click', function(){
+		$(this).animate({ 
+			width: 32%, 
+			fontSize: '20px'
+			}, 1000, function() { 
+				$(this).remove();
+			});
+	});
+	$('.scalable_columns > DIV:nth-child(2)').on('click', function(){
+		$(this).animate({ 
+			width: 32%, 
+			fontSize: '20px'
+			}, 1000, function() { 
+				$(this).remove();
+			});
+	});
+	$('.scalable_columns > DIV:nth-child(3)').on('click', function(){
+		$(this).animate({ 
+			width: 32%, 
+			fontSize: '20px'
+			}, 1000, function() { 
+				$(this).remove();
+			});
+	});
+
 
 });

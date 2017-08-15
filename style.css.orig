@@ -140,6 +140,7 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 
 
 /* BODY AREA */
+<<<<<<< HEAD
 
 .infotext DIV{
 width: 33%;
@@ -160,6 +161,8 @@ width: 15%;
 
 
 
+=======
+>>>>>>> Buttons_problem
 .container {
    height: auto;
    overflow: hidden;
@@ -195,6 +198,7 @@ width: 15%;
 
 
 
+<<<<<<< HEAD
 .container1 {
 
 	padding:0;
@@ -263,6 +267,8 @@ margin:0;
 
 
 
+=======
+>>>>>>> Buttons_problem
 /* END BODY AREA */
 
 
@@ -275,7 +281,7 @@ background: #404040
 
 
 footer {
-position: absolute;
+
     left: 0;
     height: 40%;
     width: 100%;
@@ -578,6 +584,8 @@ margin-left: 12.5%;
 
 /* END TABS FUNCTIONALITY */
 
+<<<<<<< HEAD
+=======
 /* NEWS PAGE */
 .scalable_columns {
     display: inline-block;
@@ -636,6 +644,7 @@ body > H1 {
 /* END HOMEPAGE */
 
 
+>>>>>>> Buttons_problem
 /* MEDIA QUERIE OR HOWEVER YOU SPELL THAT */
 
 @media (min-width: 901px){
