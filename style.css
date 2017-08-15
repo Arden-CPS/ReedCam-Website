@@ -1,3 +1,32 @@
+
+
+/* BACKGROUND TAGS */
+
+.bround1 {
+ background: url(Images/doc.jpg)no-repeat center center fixed; 
+
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+
+.bround2 {
+
+
+}
+
+
+
+
+
 /* GENERAL TAGS */
 
 * {
@@ -185,6 +214,35 @@ padding-bottom: 7%;
 margin:0;
 }
 
+/* ------------------------------------------------ */
+.container2 {
+
+	padding:0;
+	
+}
+
+
+
+
+
+
+.right2 {
+
+	width: 90%;
+	float: right;
+}
+
+.left2 {
+
+	width: 10%;
+	float: none; /* not needed, just for clarification */
+  
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}
+
+
 
 
 /* END BODY AREA */
@@ -306,25 +364,27 @@ footer DIV:nth-child(3) UL:nth-child(2){
 
  /* CONTACT PAGE */
 .contact-page-right-menu {
-    width: 13%;
+    
     float: left;
     text-align: left;
     background: whitesmoke;
-    border: 2px solid black;
+    
     font-size: 20pt;
-    margin: 1%;
+    padding:1%;
+  background: rgba(255, 255, 255, 0.5);
+
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 .contact-page-right-menu UL { padding: 0; }
 .contact-page-right-menu UL LI{
-    opacity: 0.7;
-    list-style-type: none;
-    box-shadow: 1px 1px 1px 1px gray;
+    
     transition: box-shadow 0.25s opacity 0.25s;
     cursor: pointer;
 }
 .contact-page-right-menu UL LI:hover{
-    opacity: 1;
-    box-shadow: 5px 5px 5px 5px gray;
+    opacity: 0.5;
+   
 }
 
 .contact-page-menu-items {
@@ -335,7 +395,7 @@ footer DIV:nth-child(3) UL:nth-child(2){
 .contact-page-menu-items > DIV {
 }
 
-.contact-page-menu-items DIV DIV IMG{ float: left; padding: 3px;}
+.contact-page-menu-items DIV DIV IMG{ float: left; padding: 3px; }
 .contact-page-menu-items DIV DIV { 
     width: 75%;
     margin-top: 1%;
@@ -369,7 +429,8 @@ textarea:focus {
   padding: 3px;
 }
 body > DIV:nth-child(2) IMG{
-  width: 100%;
+  width: 15%;
+  height: 15%;
   height: 600px;
 }
 
