@@ -22,6 +22,8 @@ body {
     padding: 0px;
     overflow-x: hidden; 
 }
+h1 {font-size: 50pt;}
+h3 {font-size: 20pt;}
 
 ul {padding: 0;}
 ul LI { list-style-type: none; }
@@ -211,6 +213,8 @@ footer DIV:nth-child(3) UL:nth-child(2){
 /* GENERALS */
 
 /* END GENERALS */
+
+
  /* CONTACT PAGE */
 .contact-page-right-menu {
     width: 13%;
@@ -269,6 +273,58 @@ textarea:focus {
 }
 
  /* END CONTACT PAGE */
+
+/* RECRUIT PAGE */
+.no_background_buttons {
+  position: absolute;
+  padding: 3px;
+}
+body > DIV:nth-child(2) IMG{
+  width: 100%;
+  height: 600px;
+}
+
+body > DIV:nth-child(2) H1{
+  font-size: 50pt;
+  color: white;
+  position: absolute;
+  top: 42%;
+  left: 59%;
+}
+
+.perksBlock {
+  background: whitesmoke;
+  font-size: 20pt;
+  letter-spacing: 2px;
+}
+
+.perksBlock > DIV {
+    background: white;
+    border-radius: 3px;
+    width: 14%;
+    text-align: center;
+    margin: 11px 11px 11px 11px;
+    font-size: 15pt;
+    letter-spacing: 1px;
+    box-shadow: 0 0 5px 1px #969696;
+    transition: box-shadow 0.3s, width 0.5s;
+    float: left;k
+}
+.perksBlock > DIV:hover {
+  box-shadow: 5px 5px 5px 5px #969696;
+  width: calc(14%+15px);
+}
+.perksBlock > DIV IMG {
+  opacity: 0.8;
+  width: 60%;
+}
+
+.job_description > UL LI {
+    background: red;
+}
+
+/* END RECRUIT PAGE */
+
 
 /* MEDIA QUERIE OR HOWEVER YOU SPELL THAT */
 
