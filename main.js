@@ -3,7 +3,17 @@ $(document).ready(function(){
 	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
 	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
 	var animation_time = 500;
-	generalQuestions.hide();
+
+	$('.slideshow').slick({
+        autoplay: true,
+        autoplaySpeed : 3000,
+        adaptiveHeight: true,
+        arrows: false,
+        speed: 500,
+        pauseOnHover: true,
+    });
+
+    generalQuestions.hide();
 	productInquiry.hide();
 	becomePartener.hide();
 	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){ 
@@ -27,4 +37,5 @@ $(document).ready(function(){
 			});
 		});
 	});
+
 });
