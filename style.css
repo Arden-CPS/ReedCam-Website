@@ -1,6 +1,7 @@
+/* GENERAL TAGS */
+
 * {
 margin:0;
-
 }
 
 a {
@@ -8,6 +9,23 @@ a {
     text-decoration: none;
 }
 
+p {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 16pt;
+background: whitesmoke;
+margin: 5px 5px 5px 5px;
+}
+body {
+    width: 100%; height: 100%;
+    margin: 0px; 
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+ul {padding: 0;}
+ul LI { list-style-type: none; }
+
+/* END GENERAL TAGS */
 
 
 
@@ -39,7 +57,6 @@ color: #ffffff;
 margin-right: 0px;
 text-align: center;
 display: inline;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: 10px;
 text-transform: uppercase;
 letter-spacing: 2px;
@@ -77,9 +94,9 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 }
 
 
-/* EVERYTHING HEADER RELATED GOES ^^^^^^ */
+/* END HEADER */
 
-/* EVERYTHING FOOTER RELATED GOES UNDER HERE */
+/* FOOTER */
 footer {
 position: absolute;
     left: 0;
@@ -163,14 +180,69 @@ footer DIV:nth-child(3) UL:nth-child(2){
 
 
 
-/* END OF FOOTER */
+/* END FOOTER */
 
+/* GENERALS */
 
+/* END GENERALS */
+ /* CONTACT PAGE */
+.contact-page-right-menu {
+    width: 13%;
+    float: left;
+    text-align: left;
+    background: whitesmoke;
+    border: 2px solid black;
+    font-size: 20pt;
+    margin: 1%;
+}
+.contact-page-right-menu UL { padding: 0; }
+.contact-page-right-menu UL LI{
+    opacity: 0.7;
+    list-style-type: none;
+    box-shadow: 1px 1px 1px 1px gray;
+    transition: box-shadow 0.25s opacity 0.25s;
+    cursor: pointer;
+}
+.contact-page-right-menu UL LI:hover{
+    opacity: 1;
+    box-shadow: 5px 5px 5px 5px gray;
+}
 
+.contact-page-menu-items {
+    width: 85%;
+    margin-left: 15%;
+}
 
+.contact-page-menu-items > DIV {
+}
 
- 
+.contact-page-menu-items DIV DIV IMG{ float: left; padding: 3px;}
+.contact-page-menu-items DIV DIV { 
+    width: 75%;
+    margin-top: 1%;
+    margin-left: 4%;
+    border-width: 3px;
+    padding: 6px;
+    background: whitesmoke;
+    font-size: 16pt;
+    text-align: left;
+    float: left;
+}
 
+textarea {
+    float: left;
+    width: 100%;
+    height: 10%;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 23pt;
+    transition: height 0.5s;
+}
+textarea:focus {
+    height: 30%;
+}
+
+ /* END CONTACT PAGE */
 
 /* MEDIA QUERIE OR HOWEVER YOU SPELL THAT */
 
