@@ -10,11 +10,11 @@ $(document).ready(function(){
 		case "About Us": changeButtonColor('about_button'); break;
 		case "Global": changeButtonColor('globalCoop_button'); break;
 		case "Products": changeButtonColor('products_button'); break;
-		case "News": changeButtonColor('newspage_button'); break;
+		case "Nesws": changeButtonColor('newspage_button'); break;
 		case "Recruitment": changeButtonColor('recruit_button'); break;
 		case "Contact Us": changeButtonColor('contact_button'); break;
 	}
-}
+
 
 
 

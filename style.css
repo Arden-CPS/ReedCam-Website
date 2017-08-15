@@ -140,6 +140,19 @@ input[type="image"][src^="Images/Logos/WhiteReedLogo"]{
 
 
 /* BODY AREA */
+
+.infotext DIV{
+width: 33%;
+float: left;
+
+
+}
+
+.infotext IMG {
+  width: 20%;
+}
+
+
 .IMGS {
 width: 15%;
 
