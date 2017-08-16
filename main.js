@@ -66,11 +66,12 @@ $(document).ready(function(){
     });
 	
 	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
+	generalQuestions.css('background','red');
 	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
 	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
 	var animation_time = 500;
 
-    generalQuestions.hide();
+    generalQuestions.show();
 	productInquiry.hide();
 	becomePartener.hide();
 	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){ 
