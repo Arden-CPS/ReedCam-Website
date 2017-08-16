@@ -547,21 +547,16 @@ body > DIV:nth-child(2) H1{
 }
 
 .perksBlock {
-  background: whitesmoke;
   display: inline-block;
-  font: 
-  font-size: 10pt;
-  letter-spacing: 2px;
 }
 
 .perksBlock > div > li {
     background: white;
     border-radius: 3px;
-    width: 14%;
+    width: 30%;
     text-align: center;
     margin: 11px 11px 11px 11px;
-    font-size: 15pt;
-    letter-spacing: 1px;
+    font-size: 15px;
     box-shadow: 0 0 5px 1px #969696;
     transition: box-shadow 0.3s, width 0.5s;
     float: left;
@@ -679,16 +674,34 @@ body > div.w3-bar.w3-black > button:nth-child(n) > img {
 
 
 /* HOMEPAGE */
-.four_square > DIV IMG{ width: 400px; background: white;}
-.four_sqaure > DIV { background: red } 
+
+.four_square {
+  background: white;
+}
+
+.four_square > DIV IMG{ background: white; cursor: pointer;}
+body > div.row > div:nth-child(n) > div:nth-child(n) { 
+  position: relative;
+  padding: 5px;
+} 
+
+body > div.row > div:nth-child(n) > div:nth-child(n) > h4 {
+    position: absolute;
+    top: 43%;
+    left: 24%;
+    font-size: 47px;
+    color: white;
+}
+
+body > div.row > div:nth-child(n) > div:nth-child(n) > p {
+  display: none;
+}
 
 .four_sqaure  DIV { 
     border: 5px solid black;
     border-radius: 5px;
     background: black;
-    position: relative;
     width: 30%;
-    float: left; 
 }
 
 .four_sqaure > DIV H4 {
@@ -704,8 +717,17 @@ body > H1 {
     top: 58%;
     left: 3%
 }
-/* END HOMEPAGE */
 
+#four_square_top > div > p,
+#four_square_bottom > div > p
+{
+    position: absolute;
+    display: block;
+    top: 67%;
+    left: 15%;
+    color: white;
+}
+/* END HOMEPAGE */
 
 /* MEDIA QUERIE OR HOWEVER YOU SPELL THAT */
 
