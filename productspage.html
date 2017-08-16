@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html>
+	<html class="bround2">
 		<head>
 			<title>Products</title>
 			<meta name="viewport" content="width=device-width initial-scale=1">
@@ -33,6 +33,25 @@
 <!-- HEADER ^^^^^^ -->
 
 <style>
+
+li {
+padding-left: 20px;
+
+
+}
+
+ul LI {
+
+
+padding: 1.25% 2.5%;
+letter-spacing: 2px;
+
+}
+
+ul {
+
+	margin-top: 1.5%;
+}
 
 .w3-red,.w3-hover-red:hover{color:#404040!important;
 	background-color:white!important}
@@ -76,13 +95,13 @@
 	<body>
 		<div class="slideshow">
 		    <div>
-		        <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="100%" height="500px">
+		        <img src="Images/Test_Images/pic1.jpg" id="backgroundImage" width="100%" height="500px">
 		    </div>
 		     <div>
-		        <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="100%" height="500px">
+		        <img src="Images/Test_Images/pic2.jpg" id="backgroundImage" width="100%" height="500px">
 		    </div>
 		     <div>
-		        <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="100%" height="500px">
+		        <img src="Images/Test_Images/pic3.jpg" id="backgroundImage" width="100%" height="500px">
 		    </div>
 		</div>
 
@@ -119,45 +138,49 @@
 	</div> <!-- end div main floats -->
 
 	<!-- bottom bar with pages of products -->
+
 <div class="w3-bar w3-black" >
     <button class="w3-bar-item w3-button tablink w3-red" onmouseenter="openCity(event,'London')"> THING1</button>
     <button class="w3-bar-item w3-button tablink" onmouseenter="openCity(event,'Paris')"> THING2</button>
     <button class="w3-bar-item w3-button tablink" onmouseenter="openCity(event,'Tokyo')">THING3</button>
   </div>
   
-  <div id="London" class="w3-container w3-border city">
+  <div id="London" class="w3-container w3-border city" >
     <h2>THING1</h2>
-    <ul> 
-        <li> This endescope has a lot of cool features</li>
-        <li> Trust me asfasdfsafd're pretty great</li>
-        <li> It does like soooooo many things</li>
-        <li> It can even fix the world </li>
-        <li> And its not very expensive</li>
-        <li> Because here at reedcam we do good</li>
+      <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="float: left; margin-bottom: 5%;">
+    <ul style="width: 40%; float: left; margin-left: 2%;"> 
+        <li style="list-style-type: square; font-size: 30px;"> This endescope has a lot of cool features</li>
+        <li style="list-style-type: square; font-size: 30px;"> Trust me asfasdfsafd're pretty great</li>
+        <li style="list-style-type: square; font-size: 30px;"> It does like soooooo many things</li>
+        <li style="list-style-type: square; font-size: 30px;" > It can even fix the world </li>
+        <li style="list-style-type: square; font-size: 30px;" > And its not very expensive</li>
+        <li style="list-style-type: square; font-size: 30px;"> Because here at reedcam we do good</li>
       </ul>
   </div>
 
   <div id="Paris" class="w3-container w3-border city" style="display:none">
     <h2>THING2</h2>
-    <ul> 
-        <li> This endescope has a lot of cool features</li>
-        <li> Trust me asfasdfsafd're pretty great</li>
-        <li> It does like soooooo many things</li>
-        <li> It can even fix the world </li>
-        <li> And its not very expensive</li>
-        <li> Because here at reedcam we do good</li>
+      <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="float: left; margin-bottom: 5%;" >
+    <ul style="width: 40%; float: left; margin-left: 2% "> 
+        <li style="list-style-type: square; font-size: 30px;"> This endescope has a lot of cool features</li>
+        <li style="list-style-type: square; font-size: 30px;"> Trust me asfasdfsafd're pretty great</li>
+        <li style="list-style-type: square; font-size: 30px;"> It does like soooooo many things</li>
+        <li style="list-style-type: square; font-size: 30px;"> It can even fix the world </li>
+        <li style="list-style-type: square; font-size: 30px;"> And its not very expensive</li>
+        <li style="list-style-type: square; font-size: 30px;"> Because here at reedcam we do good</li>
       </ul>
   </div>
 
   <div id="Tokyo" class="w3-container w3-border city" style="display:none">
     <h2>THING3</h2>
-    <ul> 
-        <li> This endescope has a lot of cool features</li>
-        <li> Trust me asfasdfsafd're pretty great</li>
-        <li> It does like soooooo many things</li>
-        <li> It can even fix the world </li>
-        <li> And its not very expensive</li>
-        <li> Because here at reedcam we do good</li>
+      <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="float: left; margin-bottom: 5%;">
+    <ul style="width: 40%; float: left; margin-left: 2%"> 
+        <li style="list-style-type: square; font-size: 30px;"> This endescope has a lot of cool features</li>
+        <li style="list-style-type: square; font-size: 30px;"> Trust me asfasdfsafd're pretty great</li>
+        <li style="list-style-type: square; font-size: 30px;"> It does like soooooo many things</li>
+        <li style="list-style-type: square; font-size: 30px;"> It can even fix the world </li>
+        <li style="list-style-type: square; font-size: 30px;"> And its not very expensive</li>
+        <li style="list-style-type: square; font-size: 30px;"> Because here at reedcam we do good</li>
       </ul>
   </div>
 </div>
@@ -168,6 +191,8 @@
     <script type="text/javascript" src="main.js"></script>
 </body>
 
+
+<style> footer UL {list-style: none;}</style>
 <!-- BEGIN FOOTER -->
 <footer>
 

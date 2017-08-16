@@ -375,7 +375,10 @@ footer {
 background: #404040
 }
 
+footer UL {
+list-style: none;
 
+}
 
 footer {
 
