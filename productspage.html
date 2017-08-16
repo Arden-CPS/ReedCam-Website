@@ -119,87 +119,54 @@
 	</div> <!-- end div main floats -->
 
 	<!-- bottom bar with pages of products -->
-
-      
-
-
-  <div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')"><h2>Endescopes</h2></button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')"><h2>Endescopes</h2></button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')"><h2> Endescopes </h2></button>
+<div class="w3-bar w3-black" >
+    <button class="w3-bar-item w3-button tablink w3-red" onmouseenter="openCity(event,'London')"> THING1</button>
+    <button class="w3-bar-item w3-button tablink" onmouseenter="openCity(event,'Paris')"> THING2</button>
+    <button class="w3-bar-item w3-button tablink" onmouseenter="openCity(event,'Tokyo')">THING3</button>
   </div>
   
-  <div id="London" class="bround2" class="w3-container w3-border city"  style="padding-bottom: 10%;">
-		<img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="margin-left: -2%;
-    margin-bottom: -0.2%; float: left;">
-    <div class=listelement>
-    	<ul>
-    		<li> This endescope has a lot of cool features</li>
-    		<li> Trust me they're pretty great</li>
-    		<li> It does like soooooo many things</li>
-    		<li> It can even fix the world </li>
-    		<li> And its not very expensive</li>
-    		<li> Because here at reedcam we do good</li>
-    	</ul>
-    </div>
-
+  <div id="London" class="w3-container w3-border city">
+    <h2>THING1</h2>
+    <ul> 
+        <li> This endescope has a lot of cool features</li>
+        <li> Trust me asfasdfsafd're pretty great</li>
+        <li> It does like soooooo many things</li>
+        <li> It can even fix the world </li>
+        <li> And its not very expensive</li>
+        <li> Because here at reedcam we do good</li>
+      </ul>
   </div>
 
   <div id="Paris" class="w3-container w3-border city" style="display:none">
-  		  <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="margin-left: -2%;
-    margin-bottom: -0.2%; float: left;">
-    <div class=listelement>
-    	<ul  style="margin-top: 5.5%;">
-    		<li> This endescope has a lot of cool features</li>
-    		<li> Trust me they're pretty great</li>
-    		<li> It does like soooooo many things</li>
-    		<li> It can even fix the world </li>
-    		<li> And its not very expensive</li>
-    		<li> Because here at reedcam we do good</li>
-    	</ul>
-    </div>
+    <h2>THING2</h2>
+    <ul> 
+        <li> This endescope has a lot of cool features</li>
+        <li> Trust me asfasdfsafd're pretty great</li>
+        <li> It does like soooooo many things</li>
+        <li> It can even fix the world </li>
+        <li> And its not very expensive</li>
+        <li> Because here at reedcam we do good</li>
+      </ul>
   </div>
 
   <div id="Tokyo" class="w3-container w3-border city" style="display:none">
-  <img src="Images/Test_Images/test1.jpg" id="backgroundImage" width="50%" style="margin-left: -2%;
-    margin-bottom: -0.2%; float: left;">
-    <div class=listelement >
-    	<ul > 
-    		<li> This endescope has a lot of cool features</li>
-    		<li> Trust me they're pretty great</li>
-    		<li> It does like soooooo many things</li>
-    		<li> It can even fix the world </li>
-    		<li> And its not very expensive</li>
-    		<li> Because here at reedcam we do good</li>
-    	</ul>
-    </div>
+    <h2>THING3</h2>
+    <ul> 
+        <li> This endescope has a lot of cool features</li>
+        <li> Trust me asfasdfsafd're pretty great</li>
+        <li> It does like soooooo many things</li>
+        <li> It can even fix the world </li>
+        <li> And its not very expensive</li>
+        <li> Because here at reedcam we do good</li>
+      </ul>
   </div>
+</div>
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script type="text/javascript" src="./slick/slick.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script type="text/javascript" src="main.js"></script>	
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
-
-
-     <!-- XXXXXXXXXX -->
-
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
-
 
 <!-- BEGIN FOOTER -->
 <footer>
