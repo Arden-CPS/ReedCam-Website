@@ -43,6 +43,15 @@ function openCity(evt, cityName) {
 
 
 $(document).ready(function(){
+	$('.slideshow').slick({
+        autoplay: true,
+        autoplaySpeed : 3000,
+        adaptiveHeight: true,
+        arrows: false,
+        speed: 500,
+        dots: true,
+    });
+
 	var title = $('title').text();
 	console.log(title);
 	switch(title){
@@ -54,15 +63,7 @@ $(document).ready(function(){
 		case "Contact Us": changeButtonColor('contact_button'); break;
 		case "Support": changeButtonColor('support_button'); break;
 	}
-	 $('.slideshow').slick({
-        autoplay: true,
-        autoplaySpeed : 3000,
-        adaptiveHeight: true,
-        arrows: false,
-        speed: 500,
-        pauseOnHover: true,
-        dots: true,
-    });
+	 
 	
 	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
 	generalQuestions.css('background','red');
@@ -186,9 +187,9 @@ $(document).ready(function(){
 			});
 		});
 	});
-	var news_item_1 = $('body > div > div:nth-child(1)');
-	var news_item_2 = $('body > div > div:nth-child(2)');
-	var news_item_3 = $('body > div > div:nth-child(3)');
+	var news_item_1 = $('#news_item1');
+	var news_item_2 = $('#news_item2');
+	var news_item_3 = $('#news_item3');
 
 	news_item_1.css('width',initial_width);
 	news_item_2.css('width',initial_width);
