@@ -5,14 +5,11 @@
 			<link rel="icon" type="image/png" href="Images/Logos/WhiteReedLogo.png">
 
 			<link rel="stylesheet" type="text/css" href="style.css">
-  			<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	        <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
   			<!-- Bootstrap -->
-    		<link href="bootstrap.min.css" rel="stylesheet" media="screen">
-
-			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-			<script type="text/javascript" src="slick/slick.min.js"></script>
-			<script type="text/javascript" src="main.js"></script>								
+    		<link href="bootstrap.min.css" rel="stylesheet" media="screen">						
 		</head>
 
 <body>
@@ -22,13 +19,13 @@
    				<input type="image" src="Images/Logos/WhiteReedLogo.png" onClick="parent.location='homepage.html'">
    			</div>
    			<div>
-				<input  type=button onClick="parent.location='global.html'" value='Global'>
-				<input  type=button onClick="parent.location='newspage.html'" value='News'>
-				<input  type=button onClick="parent.location='productspage.html'" value='Products'>
-				<input  type=button onClick="parent.location='aboutpage.html'"  value='About Us'>
-				<input  type=button onClick="parent.location='recruitpage.html'" value='recruitment'>
-				<input  type=button onClick="parent.location='contact.html'" value='contact Us'>
-				<input  type=button onClick="parent.location='support.html'" value='support'>
+				<input  type=button onClick="parent.location='global.html'" value='Global' id="globalCoop_button">
+				<input  type=button onClick="parent.location='newspage.html'" value='News' id="newspage_button">
+				<input  type=button onClick="parent.location='productspage.html'" value='Products' id="products_button">
+				<input  type=button onClick="parent.location='aboutpage.html'"  value='About Us' id="about_button">
+				<input  type=button onClick="parent.location='recruitpage.html'" value='recruitment' id="recruit_button">
+				<input  type=button onClick="parent.location='contact.html'" value='contact Us' id="contact_button">
+				<input  type=button onClick="parent.location='support.html'" value='support' id="support_button">
 			</div>
 </div>
 <div> 
@@ -41,39 +38,40 @@
 
 <!--Icons *floating with background Image-->
 <ul class="thumbnails perksBlock">
-		<li class="span2">
+	<div class="row offset4">
+		<li class="col-md-4 span2">
 			<img src="Images/Icons/bus.png">
 			Reedcam offers Transportation to all of its employees
 		</li>
-		<li class="span2">
+		<li class="col-md-4 span2">
 			<img src="Images/Icons/list.png">
 			Reedcam lets you work efficiently
 		</li>
-		<li class="span2">
+		<li class="col-md-4 span2">
 			<img src="Images/Icons/calendar.png">
 			Reedcam gives you free Vacation
 		</li>
-		<li class="span2">
+	</div >
+	<div class="row offset4">
+		<li class="col-md-4 span2">
 			<img src="Images/Icons/food.png">
 			Reedcam gives you RICE!
 		</li>
-		<li class="span2">
+		<li class="col-md-4 span2">
 			<img src="Images/Icons/beer.png">
 			Reedcam is a thriving community
 		</li>
-		<li class="span2">
+		<li class="col-md-4 span2">
 			<img src="Images/Icons/community.svg">
 			Reedcam gets you fun
 		</li>
+	</div>
 </ul>
 
 <!--On hover over h3 elements, displays bottom div, also same formatting for icons as above, showing perks unique to the job-->
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span2">
-      <!--Sidebar content-->
-    </div>
-    <div class="span10">
+    <div class="span10 offset1">
 		<table class="table table-bordered">
 			<tr>
 			<th>Job Description</th>
@@ -155,7 +153,9 @@
 	</div>
 </div>
 <script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
 <script src="bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>	
 </body>
 <!--
 <footer>

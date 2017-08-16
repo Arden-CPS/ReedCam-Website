@@ -1,3 +1,10 @@
+
+function changeButtonColor(buttonID){
+	$(buttonID).css({
+		'background' : 'white',
+		'color' : 'black'
+	});
+}
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -35,15 +42,19 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " w3-red";
 }
 
-function changeButtonColor(buttonID){
-	var selected_button = document.getElementById(buttonID);
-	selected_button.style.color = "black";
-	selected_button.style.background = "white";
-}
-
 
 $(document).ready(function(){
-
+	var title = $('title').text();
+	console.log(title);
+	switch(title){
+		case "About Us": changeButtonColor('about_button'); break;
+		case "Global": changeButtonColor('globalCoop_button'); break;
+		case "Products": changeButtonColor('products_button'); break;
+		case "News": changeButtonColor('newspage_button'); break;
+		case "Recruitment": changeButtonColor('recruit_button'); break;
+		case "Contact Us": changeButtonColor('contact_button'); break;
+		case "Support": changeButtonColor('support_button'); break;
+	}
 	 $('.slideshow').slick({
         autoplay: true,
         autoplaySpeed : 3000,
@@ -53,8 +64,7 @@ $(document).ready(function(){
         pauseOnHover: true,
         dots: true,
     });
-
-
+	
 	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
 	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
 	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
