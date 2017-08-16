@@ -1,23 +1,64 @@
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onmouseenter = function(){
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+  
+  acc[i].onmouseout = function(){
+  this.classList.toggle("active");
+  var panel = this.nextElementSibling;
+  panel.onmouseenter = function() { 
+    panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.onmouseleave = function() {
+            panel.style.maxHeight = null;
+          }
+      }
+   panel.style.maxHeight = null;
+    }
+}
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
 function changeButtonColor(buttonID){
 	var selected_button = document.getElementById(buttonID);
 	selected_button.style.color = "black";
 	selected_button.style.background = "white";
 }
 
-$(document).ready(function(){
-	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
-	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
-	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
-	var animation_time = 500;
 
-	/*$('.slideshow').slick({
+$(document).ready(function(){
+
+	 $('.slideshow').slick({
         autoplay: true,
         autoplaySpeed : 3000,
         adaptiveHeight: true,
         arrows: false,
         speed: 500,
         pauseOnHover: true,
-    });*/
+        dots: true,
+    });
+
+
+	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
+	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
+	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
+	var animation_time = 500;
 
     generalQuestions.hide();
 	productInquiry.hide();
@@ -43,6 +84,11 @@ $(document).ready(function(){
 			});
 		});
 	});
+
+
+
+
+
 	var job_description1 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(2) > td:nth-child(1) > div');
 	var job_description2 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(3) > td:nth-child(1) > div');
 	var job_description3 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(4) > td:nth-child(1) > div');

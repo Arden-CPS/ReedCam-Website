@@ -596,63 +596,47 @@ body > DIV:nth-child(2) H1{
 
 /* TABS FUNCTIONALITY */
 
-.tabs > DIV SPAN {
+.w3-red,.w3-hover-red:hover{
+  color:#404040!important;
+  background-color:white!important;
+}
+
+.w3-bar .w3-bar-item{
   
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 17px;
-  letter-spacing: 2px;
-  color:black;
-  font-weight: 300;
-  display: block;
-  text-align: center;
-  font-size: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 700px;
-}
-
-
-.tabs > DIV {
-  margin-top: 10px;
-  background: white;
-  width: 70%;
-  max-height: 700px;
-  margin-left: 15%;
-}
-
-
-.tabs UL.horizontal {
-margin-left: 12.5%;
-}
-
-.tabs LI {
-  background: white;
+  float:left;
+  width:33%;
+  border:none;
+  outline:none;
+  display:block;
+  padding:0;
+  height: auto;
+  box-shadow: 0px 1px 1px 0px;
+  transition: box-shadow 0.3s;
   
-  margin: 0 10px 0 0;
-  display: inline-block;
+  }
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+/*
+.w3-black, .w3-hover-black:hover {
+    color: white!important;
+    background-color: #000!important;
+}
+*/
+.w3-bar .w3-button {
+    white-space: normal;
 }
 
+.w3-button:hover {
+    opacity: 0.7;
+    box-shadow: 0px 0px 2px 2px;
 
-.tabs LI:hover {
-  background: #404040;
+}
+body > div.w3-bar.w3-black > button:nth-child(n) > img {
+  width: 100%;
 }
 
-.tabs A {
-    color: black;
-    display: block;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 14px 24px;
-    text-decoration: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.tabs LI:hover A {
-  color: white;
-}
 
 /* END TABS FUNCTIONALITY */
 
