@@ -6,12 +6,11 @@
             <link rel="icon" type="image/png" href="Images/Logos/WhiteReedLogo.png">
 
             <link rel="stylesheet" type="text/css" href="style.css">
-            <link rel="stylesheet" type="text/css" href="slick/slick.css">
+            <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+            <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
-            <!--Load up JQuery CDN-->
-            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-            <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-            <script type="text/javascript" src="main.js"></script>          
+            <!-- Bootstrap -->
+            <link href="bootstrap.min.css" rel="stylesheet" media="screen">         
         </head>
 
 <body>
@@ -40,32 +39,40 @@
 <h1>Reed Medical Zhejiang Province</h1>
 
 <!--Four Square of buttons with descripts-->
-<div class="four_square">
-	<div style="float: left;">
-		<img src="Images/coworker.jpg">
-        <div>
-            <h4>Teamwork</h4>
-    		<p>The company has been working as a team since</p>
-        </div>
-	</div>
-	<div style="float:right;">
-		<img src="Images/surgery.jpg">
-		<h4>Industry</h4>
-        <p>Learn the latest news from the Industry</p>
-	</div>
-	<div style="float:right;">
-		<img src="Images/assembly.svg" >
-        <h4>Assembly</h4>
-		<p>Learn how our company is assembling endoscopes</p>
-	</div>
-	<div>
-		<img src="Images/business.jpg">
-        <h4>Business</h4>
-		<p>Become a partener with our company with various plans</p>
-	</div>
+<div class="row">
+    <div class="four_square row" id="four_square_top">
+            <div class="span8">
+                <img src="Images/coworker.jpg" width="100%" onClick="parent.location='aboutpage.html'" >
+                    <h4>Teamwork</h4>
+                    <p>Proin condimentum neque facilisis, porta lorem eu, </p>
+            </div>
+            <div class="span8">
+                <img src="Images/surgery.jpg" width="100%" onClick="parent.location='aboutpage.html'" >
+                    <h4>Industry</h4>
+                    <p>Learn the latest news from the Industry</p>
+            </div>
+    </div>
+    <div class="four_square row" id="four_square_bottom">
+            <div class="span8">
+                <img src="Images/surgery.jpg" width="100%" onClick="parent.location='aboutpage.html'" >
+                    <h4>Leadership</h4>
+                    <p>The company has been working as a team since</p>
+            </div>
+            <div class="span8">
+                <img src="Images/coworker.jpg" width="100%" onClick="parent.location='aboutpage.html'" >
+                    <h4>Business</h4>
+                    <p>Learn the latest news from the Industry</p>
+            </div>
+    </div>
 </div>
-</body>
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>  
+
+</body>
+<!--
 <footer>
     <div>
         <a href="facebook.com"> <img class ="icons" src="Images/Icons/facebook.png"> </a> 
@@ -81,12 +88,12 @@
 
     <div>
         <ul>
-	        <li> <a href="ReedCamindex.html"> Home</a></li>
-	        <li> <a href="ReedCamindex.html"> Global</a></li>
-	        <li> <a href="ReedCamindex.html"> News</a></li>
-	        <li> <a href="ReedCamindex.html"> Products</a></li>
-	        <li> <a href="ReedCamindex.html"> About</a></li>
-	        <li> <a href="ReedCamindex.html"> Recruitment</a></li>
+            <li> <a href="ReedCamindex.html"> Home</a></li>
+            <li> <a href="ReedCamindex.html"> Global</a></li>
+            <li> <a href="ReedCamindex.html"> News</a></li>
+            <li> <a href="ReedCamindex.html"> Products</a></li>
+            <li> <a href="ReedCamindex.html"> About</a></li>
+            <li> <a href="ReedCamindex.html"> Recruitment</a></li>
         </ul>
 
         <ul>
@@ -95,5 +102,5 @@
         </ul>
     </div>
 </footer>
-
+-->
 </html>
