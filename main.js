@@ -1,5 +1,3 @@
-
-
 function changeButtonColor(buttonID){
 	var selected_button = document.getElementById(buttonID);
 	selected_button.style.color = "black";
@@ -7,34 +5,19 @@ function changeButtonColor(buttonID){
 }
 
 $(document).ready(function(){
-	var title = $('title').text();
-	switch(title){
-		case "About Us": changeButtonColor('about_button'); break;
-		case "Global": changeButtonColor('globalCoop_button'); break;
-		case "Products": changeButtonColor('products_button'); break;
-		case "Nesws": changeButtonColor('newspage_button'); break;
-		case "Recruitment": changeButtonColor('recruit_button'); break;
-		case "Contact Us": changeButtonColor('contact_button'); break;
-	}
-
-
-
-
-$(document).ready(function(){
 	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
 	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
 	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
 	var animation_time = 500;
-	alert('hi');
-	$('.slideshow').slick({
+
+	/*$('.slideshow').slick({
         autoplay: true,
         autoplaySpeed : 3000,
         adaptiveHeight: true,
         arrows: false,
         speed: 500,
         pauseOnHover: true,
-    });
-
+    });*/
 
     generalQuestions.hide();
 	productInquiry.hide();
@@ -60,30 +43,35 @@ $(document).ready(function(){
 			});
 		});
 	});
-	$('.scalable_columns > DIV:nth-child(1)').on('click', function(){
-		$(this).animate({ 
-			width: 32%,
-			fontSize: '20px'
-			}, 1000, function() { 
-				$(this).remove();
-			});
-	});
-	$('.scalable_columns > DIV:nth-child(2)').on('click', function(){
-		$(this).animate({ 
-			width: 32%, 
-			fontSize: '20px'
-			}, 1000, function() { 
-				$(this).remove();
-			});
-	});
-	$('.scalable_columns > DIV:nth-child(3)').on('click', function(){
-		$(this).animate({ 
-			width: 32%, 
-			fontSize: '20px'
-			}, 1000, function() { 
-				$(this).remove();
-			});
-	});
+	var job_description1 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(2) > td:nth-child(1) > div');
+	var job_description2 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(3) > td:nth-child(1) > div');
+	var job_description3 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(4) > td:nth-child(1) > div');
 
+	var job_header1 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(2) > td:nth-child(1) > h3');
+	var job_header2 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(3) > td:nth-child(1) > h3');
+	var job_header3 = $('body > div.container-fluid > div > div.span10 > table > tbody > tr:nth-child(4) > td:nth-child(1) > h3');
 
+	job_description1.hide(); job_description2.hide(); job_description3.hide();
+
+	job_header1.on('click', function(){
+	job_description3.fadeOut(animation_time, function(){
+		job_description2.fadeOut(animation_time, function(){
+			job_description1.fadeIn(animation_time);
+		});
+	});
+	});
+	job_header2.on('click', function(){
+	job_description3.fadeOut(animation_time, function(){
+		job_description1.fadeOut(animation_time, function(){
+			job_description2.fadeIn(animation_time);
+		});
+	});
+	});
+	job_header3.on('click', function(){
+	job_description1.fadeOut(animation_time, function(){
+		job_description2.fadeOut(animation_time, function(){
+			job_description3.fadeIn(animation_time);
+		});
+	});
+	});
 });

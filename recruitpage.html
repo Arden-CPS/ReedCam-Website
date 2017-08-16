@@ -7,10 +7,12 @@
 			<link rel="stylesheet" type="text/css" href="style.css">
   			<link rel="stylesheet" type="text/css" href="slick/slick.css">
 
-			<!--Load up JQuery CDN-->
-			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  			<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-			<script type="text/javascript" src="main.js"></script>			
+  			<!-- Bootstrap -->
+    		<link href="bootstrap.min.css" rel="stylesheet" media="screen">
+
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
+			<script type="text/javascript" src="main.js"></script>								
 		</head>
 
 <body>
@@ -34,97 +36,126 @@
 
 	<!--Fade and slide in on load of page-->
 	<h1>Join Our Team</h1>
-	<!--On hover ^ activate this-->
-	<p>Reed Medical has thrived since 2016!</p>
 </div>
 
 
 <!--Icons *floating with background Image-->
-<div class="perksBlock">
-		<div>
+<ul class="thumbnails perksBlock">
+		<li class="span2">
 			<img src="Images/Icons/bus.png">
 			Reedcam offers Transportation to all of its employees
-		</div>
-		<div>
+		</li>
+		<li class="span2">
 			<img src="Images/Icons/list.png">
 			Reedcam lets you work efficiently
-		</div>
-		<div>
+		</li>
+		<li class="span2">
 			<img src="Images/Icons/calendar.png">
 			Reedcam gives you free Vacation
-		</div>
-		<div>
+		</li>
+		<li class="span2">
 			<img src="Images/Icons/food.png">
 			Reedcam gives you RICE!
-		</div>
-		<div>
+		</li>
+		<li class="span2">
 			<img src="Images/Icons/beer.png">
 			Reedcam is a thriving community
-		</div>
-		<div>
+		</li>
+		<li class="span2">
 			<img src="Images/Icons/community.svg">
 			Reedcam gets you fun
-		</div>
-</div>
+		</li>
+</ul>
 
 <!--On hover over h3 elements, displays bottom div, also same formatting for icons as above, showing perks unique to the job-->
-<div class="job_description">
-			<h3>Job #1: Security Analyst</h3>
-			<div>
-				<img src="Images/math.jpg">
-				<p>This is what a secutiy Analyst Does and who we are looking for:</p>
-				<ul>
-					<li>Analyze data sets and report information</li>
-					<li>Collaborate with teammates</li>
-					<li>Strong Mathematics background</li>
-				</ul>
-				<div>
-					<p>Submit your Name and Resume Below</p>
-					<form>
-						<input type="text" name="name" placeholder="Name">
-						<input type="file" name="resume" value="Upload File">
-						<input type="submit" name="resume_submit" value="submit">
-					</form>
-				</div>
-			</div>
-			<h3>Job #2: Janitor</h3>
-			<div>
-				<img src="Images/janitor.jpg">
-				<p>This is what a Janitor Does and who we are looking for:</p>
-				<ul>
-					<li>Show up on time</li>
-					<li>Do the dishes</li>
-					<li>Cook Rice</li>
-				</ul>				
-				<div>
-					<p>Submit your Name and Resume Below</p>
-					<form>
-						<input type="text" name="name" placeholder="Name">
-						<input type="file" name="resume" value="Upload File">
-						<input type="submit" name="resume_submit" value="submit">
-					</form>
-				</div>
-			</div>
-			<h3>Job #3: Data Analyst</h3>
-			<div>
-				<img src="Images/programmer.jpg">
-				<p>This is what a secutiy Analyst Does and who we are looking for:</p>
-				<ul>
-					<li>Bring a positive attitude</li>
-					<li>Keep a tidy workspace</li>
-					<li>Strong math background</li>
-				</ul>
-				<div>
-					<p>Submit your Name and Resume Below</p>
-					<form>
-						<input type="text" name="name" placeholder="Name">
-						<input type="file" name="resume" value="Upload File">
-						<input type="submit" name="resume_submit" value="submit">
-					</form>
-				</div>
-			</div>
-</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+    <div class="span10">
+		<table class="table table-bordered">
+			<tr>
+			<th>Job Description</th>
+			<th>Location</th>
+			<th>Salary</th>
+			</tr>
 
+			<tr>
+					<td><h3>Job #1: Security Analyst</h3>
+					<div>
+						<img src="Images/math.jpg" width="300px">
+						<p>This is what a secutiy Analyst Does and who we are looking for:</p>
+						<ul>
+							<li>Analyze data sets and report information</li>
+							<li>Collaborate with teammates</li>
+							<li>Strong Mathematics background</li>
+						</ul>
+						<div>
+							<p>Submit your Name and Resume Below</p>
+							<form>
+								<input type="text" name="name" placeholder="Name">
+								<input type="file" name="resume" value="Upload File">
+								<input type="submit" name="resume_submit" value="submit">
+							</form>
+						</div>
+					</div>
+					</td>
+					<td>Shanghai</td>
+					<td>¥100</td>
+			</tr>
+			<tr>
+					<td><h3>Job #2: Janitor</h3>
+					<div>
+						<img src="Images/janitor.jpg" width="300px">
+						<p>This is what a Janitor Does and who we are looking for:</p>
+						<ul>
+							<li>Show up on time</li>
+							<li>Do the dishes</li>
+							<li>Cook Rice</li>
+						</ul>				
+						<div>
+							<p>Submit your Name and Resume Below</p>
+							<form>
+								<input type="text" name="name" placeholder="Name">
+								<input type="file" name="resume" value="Upload File">
+								<input type="submit" name="resume_submit" value="submit">
+							</form>
+						</div>
+					</div>
+					</td>
+					<td>PingHu</td>
+					<td>¥100000</td>
+			</tr>
+			<tr>
+					<td><h3>Job #3: Data Analyst</h3>
+					<div>
+						<img src="Images/programmer.jpg" width="300px">
+						<p>This is what a secutiy Analyst Does and who we are looking for:</p>
+						<ul>
+							<li>Bring a positive attitude</li>
+							<li>Keep a tidy workspace</li>
+							<li>Strong math background</li>
+						</ul>
+						<div>
+							<p>Submit your Name and Resume Below</p>
+							<form>
+								<input type="text" name="name" placeholder="Name">
+								<input type="file" name="resume" value="Upload File">
+								<input type="submit" name="resume_submit" value="submit">
+							</form>
+						</div>
+					</div>
+					</td>
+					<td>Malaysia</td>
+					<td>¥50000000</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap.min.js"></script>
 </body>
 <!--
 <footer>
