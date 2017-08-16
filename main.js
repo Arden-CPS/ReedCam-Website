@@ -130,4 +130,90 @@ $(document).ready(function(){
 		});
 	});
 	});
+
+	var four_square_img_1 = $('#four_square_top > DIV:nth-child(1) > IMG');
+	var four_square_img_2 = $('#four_square_top > DIV:nth-child(2) > IMG');
+	var four_square_img_3 = $('#four_square_bottom > DIV:nth-child(1) > IMG');
+	var four_square_img_4 = $('#four_square_bottom > DIV:nth-child(2) > IMG');
+
+	var img_1_p = $('#four_square_top > div:nth-child(1) > p');
+	var img_2_p = $('#four_square_top > div:nth-child(2) > p');
+	var img_3_p = $('#four_square_bottom > div:nth-child(1) > p');
+	var img_4_p = $('#four_square_bottom > div:nth-child(2) > p');
+
+	img_1_p.hide();
+	img_2_p.hide();
+	img_3_p.hide();
+	img_4_p.hide();
+	var animation_time_new = 300;
+	four_square_img_1.on('mouseover',function(){
+		console.log('img1');
+		img_4_p.fadeOut(animation_time_new, function(){
+			img_3_p.fadeOut(animation_time_new, function(){
+				img_2_p.fadeOut(animation_time_new, function(){
+					img_1_p.fadeIn(animation_time_new);
+				});
+			});
+		});
+	});
+	four_square_img_2.on('mouseover',function(){
+		console.log('img1');
+		img_1_p.fadeOut(animation_time_new, function(){
+			img_3_p.fadeOut(animation_time_new, function(){
+				img_4_p.fadeOut(animation_time_new, function(){
+					img_2_p.fadeIn(animation_time_new);
+				});
+			});
+		});
+	});
+	four_square_img_3.on('mouseover',function(){
+		console.log('img1');
+		img_4_p.fadeOut(animation_time_new, function(){
+			img_1_p.fadeOut(animation_time_new, function(){
+				img_2_p.fadeOut(animation_time_new, function(){
+					img_3_p.fadeIn(animation_time_new);
+				});
+			});
+		});
+	});
+	four_square_img_4.on('mouseover',function(){
+		console.log('img1');
+		img_1_p.fadeOut(animation_time_new, function(){
+			img_3_p.fadeOut(animation_time_new, function(){
+				img_2_p.fadeOut(animation_time_new, function(){
+					img_4_p.fadeIn(animation_time_new);
+				});
+			});
+		});
+	});
+
+	/*
+	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
+	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
+	var animation_time = 500;
+
+    generalQuestions.hide();
+	productInquiry.hide();
+	becomePartener.hide();
+	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){ 
+		productInquiry.fadeOut(animation_time, function(){
+			becomePartener.fadeOut(animation_time, function(){
+				generalQuestions.fadeIn(animation_time);
+			});
+		});
+	});
+	$('.contact-page-right-menu UL LI:nth-child(2)').on('click',function(){  
+		generalQuestions.fadeOut(animation_time, function(){
+			becomePartener.fadeOut(animation_time, function(){
+				productInquiry.fadeIn(animation_time);
+			});
+		});
+	});
+	$('.contact-page-right-menu UL LI:nth-child(3)').on('click',function(){  
+		productInquiry.fadeOut(animation_time, function(){
+			generalQuestions.fadeOut(animation_time, function(){
+				becomePartener.fadeIn(animation_time);
+			});
+		});
+	});*/
 });
