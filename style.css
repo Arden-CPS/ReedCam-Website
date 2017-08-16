@@ -669,21 +669,21 @@ body > div.w3-bar.w3-black > button:nth-child(n) > img {
 /* NEWS PAGE */
 .scalable_columns {
     display: inline-block;
-    width: 78%;
+    width: 100%;
     background: black;
 }
 .scalable_columns > DIV{
-  width: 16%;
-  margin: 5px 5px 5px 5px;
-  float: left;
+  width: 30%;
+  height: 450px;
+  margin: 10px 11px 7px 12px;
+  border-radius: 2px;
   font-size: 1px;
+  float: left;
   text-align: center;
   background: whitesmoke;
+  transition: width 0.5s;
 }
 
-.scalable_colums > DIV:nth-child(1):hover {
-  width: 32%;
-}
 .scalable_columns > DIV H1 { font-size: 40px; }
 .scalable_columns > DIV P {
   width: 80%;

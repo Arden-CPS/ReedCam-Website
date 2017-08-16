@@ -1,4 +1,3 @@
-
 function changeButtonColor(buttonID){
 	$(buttonID).css({
 		'background' : 'white',
@@ -187,34 +186,41 @@ $(document).ready(function(){
 			});
 		});
 	});
+	var news_item_1 = $('body > div > div:nth-child(1)');
+	var news_item_2 = $('body > div > div:nth-child(2)');
+	var news_item_3 = $('body > div > div:nth-child(3)');
 
-	/*
-	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
-	var becomePartener = $('.contact-page-menu-items > DIV:nth-child(3)');
-	var animation_time = 500;
+	news_item_1.css('width',initial_width);
+	news_item_2.css('width',initial_width);
+	news_item_3.css('width',initial_width);
 
-    generalQuestions.hide();
-	productInquiry.hide();
-	becomePartener.hide();
-	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){ 
-		productInquiry.fadeOut(animation_time, function(){
-			becomePartener.fadeOut(animation_time, function(){
-				generalQuestions.fadeIn(animation_time);
-			});
-		});
+	var initial_width = '30%';
+	var small_width = '20%';
+	var big_width = '50%';
+
+	news_item_1.on('mouseover',function(){
+		console.log('news_item_1');
+		news_item_2.css('width',small_width);
+		news_item_3.css('width',small_width);
+		news_item_1.css('width',big_width);
 	});
-	$('.contact-page-right-menu UL LI:nth-child(2)').on('click',function(){  
-		generalQuestions.fadeOut(animation_time, function(){
-			becomePartener.fadeOut(animation_time, function(){
-				productInquiry.fadeIn(animation_time);
-			});
-		});
+	news_item_2.on('mouseover',function(){
+		console.log('news_item_2');
+		news_item_1.css('width',small_width);
+		news_item_3.css('width',small_width);
+		news_item_2.css('width',big_width);
 	});
-	$('.contact-page-right-menu UL LI:nth-child(3)').on('click',function(){  
-		productInquiry.fadeOut(animation_time, function(){
-			generalQuestions.fadeOut(animation_time, function(){
-				becomePartener.fadeIn(animation_time);
-			});
-		});
-	});*/
+	news_item_3.on('mouseover',function(){
+		console.log('news_item_3');
+		news_item_1.css('width',small_width);
+		news_item_2.css('width',small_width);
+		news_item_3.css('width',big_width);
+	});
+	if(news_item_1.is(":focus") !== true){
+		if(news_item_2.is(":focus") !== true){
+			if(news_item_3.is(":focus") !== true){
+				console.log('out');
+			}
+		}
+	}
 });
