@@ -1,6 +1,20 @@
 
+.listelement {
 
+background-color: grey;
+    top: 5%;
+    padding: 0;
+    margin-top: 5.5%;
 
+}
+.listelement LI {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+padding: 8.5px;
+margin-top: 3%;
+}
 
 
 
