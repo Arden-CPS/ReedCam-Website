@@ -719,11 +719,17 @@ body > div.w3-bar.w3-black > button:nth-child(n) > img {
 
 /* NEWS PAGE */
 .companyArticle {
-  padding: 5px;
+  padding: 5px;margin-bottom: 2%;
   width:800px; 
   height: 203px; 
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 0px #344b4b;
   position: relative;
+  transition: box-shadow 0.5s;
+}
+.companyArticle:hover{
+  box-shadow: 5px 5px 0px #344b4b;
+  cursor: pointer;
 }
 #article_description {
   position: absolute;
