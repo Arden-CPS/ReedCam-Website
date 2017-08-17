@@ -141,6 +141,22 @@ p {
 }
 
 
+h6 {
+
+font-size: 17px;
+color: black;
+margin-right: 0px;
+text-align: center;
+display: inline;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+font-weight: bold;
+}
+
 /* END GENERAL TAGS */
 
 
