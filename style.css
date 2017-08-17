@@ -686,6 +686,40 @@ body > div.w3-bar.w3-black > button:nth-child(n) > img {
 /* END TABS FUNCTIONALITY */
 
 /* NEWS PAGE */
+.companyArticle {
+  padding: 5px;
+  width:800px; 
+  height: 203px; 
+  border: 1px solid rgba(0,0,0,0.5);
+  position: relative;
+}
+#article_description {
+  position: absolute;
+  width: 60%;
+  top: 46%;
+  left: 38%;
+  line-height: 1.15;
+  font-size: 20px;
+
+}
+
+.companyArticle > h2 {
+  position: absolute;
+  top: 8px;
+  width: 60%;
+  left: 38%;
+  font-size: 27px;
+  letter-spacing: normal;
+  line-height: 1.15;
+}
+
+.companyArticle > p:nth-child(5) > small {
+  position: absolute;
+  left: 60%;
+  top: 85%;
+}
+.companyArticle > img {padding: 7px}
+
 .scalable_columns {
     display: inline-block;
     width: 100%;
