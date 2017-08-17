@@ -1,48 +1,119 @@
-<div class="w3-bar w3-black" >
-    <button class="w3-bar-item w3-button tablink w3-red" onmouseenter="openCity(event,'London')"> THING1</button>
-    <button class="w3-bar-item w3-button tablink" onmouseenter="openCity(event,'Paris')"> THING2</button>
-    <button class="w3-bar-item w3-button tablink" onmouseenter="openCity(event,'Tokyo')">THING3</button>
-  </div>
-  
-  <div id="London" class="w3-container w3-border city">
-    <h2>THING1</h2>
-    <ul> 
-        <li> This endescope has a lot of cool features</li>
-        <li> Trust me asfasdfsafd're pretty great</li>
-        <li> It does like soooooo many things</li>
-        <li> It can even fix the world </li>
-        <li> And its not very expensive</li>
-        <li> Because here at reedcam we do good</li>
-      </ul>
-  </div>
+<html>
+  <head>
+      <title>Test_News</title>
+      <meta name="viewport" content="width=device-width initial-scale=1">
+      <link rel="icon" type="image/png" href="Images/Logos/WhiteReedLogo.png">
 
-  <div id="Paris" class="w3-container w3-border city" style="display:none">
-    <h2>THING2</h2>
-    <ul> 
-        <li> This endescope has a lot of cool features</li>
-        <li> Trust me asfasdfsafd're pretty great</li>
-        <li> It does like soooooo many things</li>
-        <li> It can even fix the world </li>
-        <li> And its not very expensive</li>
-        <li> Because here at reedcam we do good</li>
-      </ul>
-  </div>
+      <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+          <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
-  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
-    <h2>THING3</h2>
-    <ul> 
-        <li> This endescope has a lot of cool features</li>
-        <li> Trust me asfasdfsafd're pretty great</li>
-        <li> It does like soooooo many things</li>
-        <li> It can even fix the world </li>
-        <li> And its not very expensive</li>
-        <li> Because here at reedcam we do good</li>
-      </ul>
+        <!-- Bootstrap -->
+        <link href="bootstrap.min.css" rel="stylesheet" media="screen">       
+        <style type="text/css">
+
+          .companyArticle {
+            padding: 5px;
+            width:800px; 
+            height: 203px; 
+            border: 1px solid rgba(0,0,0,0.5);
+            position: relative;
+          }
+          #article_description {
+            position: absolute;
+            width: 60%;
+            top: 46%;
+            left: 38%;
+            line-height: 1.15;
+            font-size: 20px;
+
+          }
+
+          .companyArticle > h2 {
+            position: absolute;
+            top: 8px;
+            width: 60%;
+            left: 38%;
+            font-size: 27px;
+            letter-spacing: normal;
+            line-height: 1.15;
+          }
+
+          .companyArticle > p:nth-child(5) > small {
+            position: absolute;
+            left: 60%;
+            top: 85%;
+          }
+          .companyArticle > img {padding: 7px}
+        </style>
+    </head>
+<body>
+
+<div class="center_slideshow">
+  <div>
+      <img src="Images/coworker.jpg" id="backgroundImage" width="90%" height="500px">
+  </div>
+  <div>
+      <img src="Images/math.jpg" id="backgroundImage" width="90%" height="500px">
+  </div>
+  <div>
+      <img src="Images/janitor.jpg" id="backgroundImage" width="90%" height="500px">
+  </div>
+  <div>
+      <img src="Images/janitor.jpg" id="backgroundImage" width="90%" height="500px">
   </div>
 </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    <script src="bootstrap.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+<div class="container-fluid">
+  <div class="row-fluid">
+      <div class="span7 offset1">
+      <div class="companyArticle">
+          <img src="Images/janitor.jpg" width="35%" height="50%">
+          <h2>This Rival Company has a New Endoscope, Quick! let's go make one</h2>
+          <p id="article_description">Here is some more boring text,,here is some more boring text,,here is some more boring text,,
+          </p>
+          <br>
+          <p><small>Arden Diakhate-Palme/ August 17th, 2017</small></p>
+        </div>
+        <div class="companyArticle">
+          <img src="Images/janitor.jpg" width="35%" height="50%">
+          <h2>This Rival Company has a New Endoscope, Quick! let's go make one</h2>
+          <p id="article_description">Here is some more boring text,,here is some more boring text,,here is some more boring text,,
+          </p>
+          <br>
+          <p><small>Arden Diakhate-Palme/ August 17th, 2017</small></p>
+        </div>
+    </div>
+    <div class="span2 offset1">
+        <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="39714/"></script> <!-- end feedwind code -->
+        <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="39714/"></script> <!-- end feedwind code -->
+    </div>
+  </div>
+</div>
+
+<div class="scalable_columns row">
+    <div class="span2" id="news_item1">
+      <h1>Company News</h1>
+      <img src="Images/doc.jpg">
+      <p>It took 12 years of pogo training for Ryan O’Malley (@xpogoryano) to successfully land this wall-plant/no-hands backflip. “I’d never tried them before in a combo,” he says of his #WHPtalentshow submission.</p>
+    </div>
+    <div class="span2" id="news_item2">
+      <h1>Industry News</h1>
+      <img src="Images/doc.jpg">
+      <p>It took 12 years of pogo training for Ryan O’Malley (@xpogoryano) to successfully land this wall-plant/no-hands backflip. “I’d never tried them before in a combo,” he says of his #WHPtalentshow submission.</p>
+    </div>
+    <div class="span2" id="news_item3">
+      <h1>Industry News</h1>
+      <img src="Images/doc.jpg">
+      <p>It took 12 years of pogo training for Ryan O’Malley (@xpogoryano) to successfully land this wall-plant/no-hands backflip. “I’d never tried them before in a combo,” he says of his #WHPtalentshow submission.</p>
+    </div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>  
 </body>
+
+</html>
