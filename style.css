@@ -174,8 +174,133 @@ font-weight: bold;
 
 
 }
+/* TAGS FOR TABSLET */
 
+.tabs > DIV {
+  margin-top: 10px;
+  background: white;
 
+}
+
+.tabs > DIV SPAN {
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  width: 80%; margin-left: 10%;
+  font-weight: 300;
+  line-height: 186px;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
+.tabs > DIV SPAN P {
+  position: relative;
+  text-align: left;
+}
+
+.tabs UL.horizontal {
+  list-style: none outside none;
+  padding: 5px;
+  margin-left: 23% ;
+}
+
+.tabs LI {
+  background: white;
+  /*border-bottom: 4px solid #E5E5E5;*/
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.tabs A {
+  color: black;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 14px 30px;
+  border: 3px solid black;
+  text-decoration: none;
+}
+.tabs A:active { color: white; text-decoration: none;}
+.tabs A:not(:active) {text-decoration: none;}
+
+.tabs LI:hover {
+  background: black;
+  color:white;
+  border-bottom: 4px solid white;
+}
+
+.tabs LI:hover A {
+  color: white;
+}
+
+.active {
+  background: black;
+  color:white;
+  border: 4px solid white;
+}
+
+.active A {
+  color: white;
+  background: black;
+}
+
+.link {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 48px;
+  margin-top: 20px;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.anchorLink {
+  border-bottom: 1px dashed white;
+  color: white;
+  text-decoration: none;
+}
+
+.anchorLink:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: inherit;
+}
+
+.screenshot {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.logo {
+  margin-top: -6px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.button {
+  background-color: #a0cac0;
+  border: none;
+  border-bottom: 4px solid #68a697;
+  color: #FFFFFF;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.button:hover {
+  background: #93b7ae;
+  color: #FFF;
+  border-bottom-color: #68a697;
+}
+/* END TAGS FOR TABSLET */
 
 /* END GENERAL TAGS */
 
@@ -761,7 +886,7 @@ body > div.w3-bar.w3-black > button:nth-child(n) > img {
 .scalable_columns {
     display: inline-block;
     width: 100%;
-    background: black;
+    background:transparent;
 }
 .scalable_columns > DIV{
   width: 30%;
@@ -784,6 +909,7 @@ body > div.w3-bar.w3-black > button:nth-child(n) > img {
   width: 50%;
 }
 /* END NEWS PAGE */
+
 
 
 /* HOMEPAGE */
