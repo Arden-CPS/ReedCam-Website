@@ -75,8 +75,8 @@ margin-right: auto;
 
 /* MENU TAGS */
 button.accordion {
-    background-color: #eee;
-    color: #444;
+   color: whitesmoke;
+    background-color: #404040;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -88,12 +88,12 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: #737373;
 }
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color:  #f2f2f2;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
@@ -144,7 +144,7 @@ p {
 h6 {
 
 font-size: 17px;
-color: black;
+color: white;
 margin-right: 0px;
 text-align: center;
 display: inline;
@@ -156,6 +156,26 @@ font-style: normal;
 text-decoration: none;
 font-weight: bold;
 }
+h4 {
+
+
+font-size: 17px;
+color: black;
+margin-right: 0px;
+text-align: center;
+display: inline;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+font-weight: bold;
+
+
+}
+
+
 
 /* END GENERAL TAGS */
 
@@ -258,6 +278,8 @@ width: 15%;
 .container {
    height: auto;
    overflow: hidden;
+       margin-bottom: -0.2%;
+
    
 }
 
@@ -281,6 +303,8 @@ color: black;
 .right {
     width: 50%;
     float: right;
+  
+    margin-top: 0.4%;
    
 }
 
@@ -290,6 +314,7 @@ color: black;
     /* the next props are meant to keep this block independent from the other floated one */
     width: auto;
     overflow: hidden;
+    margin-top: 0.35%;
 
 }
 
@@ -299,7 +324,7 @@ color: black;
     padding-bottom: 32%;
     margin:0;
     padding-left: 25%;
-    background-color: grey;
+    background-color: #f2f2f2;
     margin-top: -1%;
 }
 
@@ -308,7 +333,7 @@ color: black;
     padding-bottom: 31%;
     margin: 0;
     padding-left: 25%;
-    background-color: grey;
+    background-color: #f2f2f2;
     
 }
 
@@ -655,7 +680,7 @@ body > DIV:nth-child(2) H1{
   display:block;
   padding:0;
   height: auto;
-  box-shadow: 0px 1px 1px 0px;
+ 
   transition: box-shadow 0.3s;
   
   }
@@ -669,6 +694,11 @@ body > DIV:nth-child(2) H1{
     background-color: #000!important;
 }
 */
+
+.w3-bar,.w3-black {
+      margin-right: -2%;
+}
+
 .w3-bar .w3-button {
     white-space: normal;
 }
@@ -680,6 +710,8 @@ body > DIV:nth-child(2) H1{
 }
 body > div.w3-bar.w3-black > button:nth-child(n) > img {
   width: 100%;
+
+
 }
 
 
