@@ -1,152 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>Global</title>
-			<meta name="viewport" content="width=device-width initial-scale=1">
-			<link rel="icon" type="image/png" href="Images/Logos/WhiteReedLogo.png">
+      <title>Global</title>
+      <meta name="viewport" content="width=device-width initial-scale=1">
+      <link rel="icon" type="image/png" href="Images/Logos/WhiteReedLogo.png">
 
-			<link rel="stylesheet" type="text/css" href="style.css">
-  			<link rel="stylesheet" type="text/css" href="slick/slick.css">
-  			
+      <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+          <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
-			<!--Load up JQuery CDN-->
-			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  			<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-			<script type="text/javascript" src="main.js"></script>			
-		</head>
+        <!-- Bootstrap -->
+        <link href="bootstrap.min.css" rel="stylesheet" media="screen">   		</head>
 
 <header>
-<div>
-		<input type="image" src="Images/Logos/WhiteReedLogo.png" onClick="parent.location='homepage.html'">
-		</div>	
-<div>
-			<input  type=button onClick="parent.location='global.html'" value='Global'>
-			<input  type=button onClick="parent.location='newspage.html'" value='News'>
-			<input  type=button onClick="parent.location='productspage.html'" value='Products'>
-			<input  type=button onClick="parent.location='aboutpage.html'"  value='About Us'>
-			<input  type=button onClick="parent.location='recruitpage.html'" value='recruitment'>
-			<input  type=button onClick="parent.location='contact.html'" value='contact Us'>
-			<input  type=button onClick="parent.location='support.html'" value='support'>
-</div>
+    <div>
+      <input type="image" src="Images/Logos/WhiteReedLogo.png" onClick="parent.location='homepage.html'">
+    </div>
+    <div>
+      <input  type=button onClick="parent.location='global.html'" value='Global'>
+      <input  type=button onClick="parent.location='newspage.html'" value='News'>
+      <input  type=button onClick="parent.location='productspage.html'" value='Products'>
+      <input  type=button onClick="parent.location='aboutpage.html'"  value='About Us'>
+      <input  type=button onClick="parent.location='recruitpage.html'" value='recruitment'>
+      <input  type=button onClick="parent.location='contact.html'" value='contact Us'>
+      <input  type=button onClick="parent.location='support.html'" value='support'>
+    </div>
 </header>
-
-
-
-<!-- END HEADER -->
 
 <body>
 
-	
-
-	<!-- DIVBLOCKS FOR TRIPLE TEXT  -->
-
-<div>
-<style>
-
-.w3-red,.w3-hover-red:hover{color:#404040!important;
-	background-color:#404040!important}
-
-.w3-bar .w3-bar-item{
-	
-	float:left;
-	width:33%;
-	border:none;
-	outline:none;
-	display:block;
-	padding:0;
-	height: auto;
-	
-	}
-
-.w3-container, .w3-panel {
-    padding: 0.01em 16px;
-}
-
-.w3-black, .w3-hover-black:hover {
-    color: #fff!important;
-    background-color: #000!important;
-}
-
-.w3-bar .w3-button {
-    white-space: normal;
-}
-
-.w3-button:hover {
-    opacity: 0.7;
-}
-
-
-
-</style>
-
-<div class="w3-bar w3-black" >
-    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')"> <img style="height:auto" src="Images/test1.jpg"> THING1</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')"> <img style="height:auto" src="Images/test2.jpg"> THING2</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')"><img style="height:auto" src="Images/test5.jpg"> THING3</button>
-  </div>
-  
-  <div id="London" class="w3-container w3-border city">
-    <h2>THING1</h2>
-    <p>Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
-  </div>
-
-  <div id="Paris" class="w3-container w3-border city" style="display:none">
-    <h2>THING2</h2>
-    <p>Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p> 
-  </div>
-
-  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
-    <h2>THING3</h2>
-    <p>Proin condimentum neque facilisis, porta lorem eu, auctor nibh. Integer ut enim a est placerat bibendum in eget arcu. Sed enim lectus, fermentum eu orci eu, scelerisque viverra erat. Donec quis faucibus augue. Curabitur blandit imperdiet ultricies. Nulla a lectus nec massa luctus sagittis eget ac metus. Vestibulum id varius neque. Vivamus non gravida nulla, sed congue enim. Ut rutrum efficitur facilisis. Fusce ut sem nunc. Phasellus non rutrum dolor. Vestibulum id risus non sapien mollis rhoncus ac vitae purus. Suspendisse interdum elit nisi, sit amet eleifend turpis ultrices quis. Aenean pretium auctor orci.</p>
-  </div>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
-
-</div>
-
-
-	<!-- END DIVBLOCKS TRIPLE TEXT  -->
-
-<br style="clear:both;"
-
-<!-- 4 float divs -->
-
-			<div class="container">
-   				 <div class="right">
-    					<p> Something Important</p>
-        	<img  src="Images/Test_Images/test1.jpg" width="100%" > 
-        				
-
-
-    		</div>
-    	<div class="left">
-      
-         		<img  src="Images/Test_Images/test1.jpg" width="100%" > 
-       				 <p> Something Important</p>
-    
-       
-
-      
+<div class="scalable_columns row">
+    <div class="span2" id="news_item1">
+      <h1>Company News</h1>
+      <img src="Images/doc.jpg">
+      <p>It took 12 years of pogo training for Ryan O’Malley (@xpogoryano) to successfully land this wall-plant/no-hands backflip. “I’d never tried them before in a combo,” he says of his #WHPtalentshow submission.</p>
+    </div>
+    <div class="span2" id="news_item2">
+      <h1>Industry News</h1>
+      <img src="Images/doc.jpg">
+      <p>It took 12 years of pogo training for Ryan O’Malley (@xpogoryano) to successfully land this wall-plant/no-hands backflip. “I’d never tried them before in a combo,” he says of his #WHPtalentshow submission.</p>
+    </div>
+    <div class="span2" id="news_item3">
+      <h1>Industry News</h1>
+      <img src="Images/doc.jpg">
+      <p>It took 12 years of pogo training for Ryan O’Malley (@xpogoryano) to successfully land this wall-plant/no-hands backflip. “I’d never tried them before in a combo,” he says of his #WHPtalentshow submission.</p>
     </div>
 </div>
-</body>
-<!-- START OF FOOTER -->
 
+
+<br style="clear:both;">
+<div class="container">
+		 <div class="right">
+			<p> Something Important</p>
+<img  src="Images/Test_Images/test1.jpg" width="100%" > 
+</div>
+<div class="left">
+	<img  src="Images/Test_Images/test1.jpg" width="100%" > 
+	<p> Something Important</p>
+</div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>  
+</body>
 <footer>
 
 							<div >
@@ -193,10 +112,6 @@ function openCity(evt, cityName) {
 
 								</ul>
 
-							</div>
-					
-
-
-	</footer>
+							</div></footer>
 </html>
 
