@@ -7,6 +7,18 @@ function changeButtonColor(buttonID){
 
 }
 
+<<<<<<< HEAD
+=======
+function toggleWithFade(element){
+	if (element.is(":visible") === false) {
+    console.log('hidden');
+        element.fadeIn(500);
+    } else {
+    console.log('shown');
+        element.fadeOut(500);
+    }
+}
+>>>>>>> 86efc0d20e4fe625f16be77dc49f02a41326cfde
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -252,11 +264,17 @@ $(document).ready(function(){
 		news_item_2.css('width',small_width);
 		news_item_3.css('width',big_width);
 	});
-	if(news_item_1.is(":focus") !== true){
-		if(news_item_2.is(":focus") !== true){
-			if(news_item_3.is(":focus") !== true){
-				console.log('out');
-			}
-		}
-	}
+	
+
+	var article_1 = $('#article_1'); 
+	var article_2 = $('#article_2');
+	var article_3 = $('#article_3');
+
+	article_1.next().show();
+	article_2.next().hide();
+	article_3.next().hide();
+	
+	article_1.on('click',function(){toggleWithFade(article_1.next());});
+	article_2.on('click',function(){toggleWithFade(article_2.next());});
+	article_3.on('click',function(){toggleWithFade(article_3.next());});
 });
