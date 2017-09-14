@@ -2,23 +2,10 @@ function changeButtonColor(buttonID){
 	var selected_button = document.getElementById(buttonID);
 	selected_button.style.color = "black";
 	selected_button.style.background = "white";
-	
+
 
 
 }
-
-<<<<<<< HEAD
-=======
-function toggleWithFade(element){
-	if (element.is(":visible") === false) {
-    console.log('hidden');
-        element.fadeIn(500);
-    } else {
-    console.log('shown');
-        element.fadeOut(500);
-    }
-}
->>>>>>> 86efc0d20e4fe625f16be77dc49f02a41326cfde
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -29,11 +16,11 @@ for (i = 0; i < acc.length; i++) {
       var panel = this.nextElementSibling;
       panel.style.maxHeight = panel.scrollHeight + "px";
   }
-  
+
   acc[i].onmouseout = function(){
   this.classList.toggle("active");
   var panel = this.nextElementSibling;
-  panel.onmouseenter = function() { 
+  panel.onmouseenter = function() {
     panel.style.maxHeight = panel.scrollHeight + "px";
         panel.onmouseleave = function() {
             panel.style.maxHeight = null;
@@ -110,8 +97,8 @@ $(document).ready(function(){
 		case "Contact Us": changeButtonColor('contact Us'); break;
 		case "Support": changeButtonColor('support'); break;
 	}
-	 
-	
+
+
 	var generalQuestions = $('.contact-page-menu-items > DIV:nth-child(1)');
 	generalQuestions.css('background','red');
 	var productInquiry = $('.contact-page-menu-items > DIV:nth-child(2)');
@@ -121,21 +108,21 @@ $(document).ready(function(){
     generalQuestions.show();
 	productInquiry.hide();
 	becomePartener.hide();
-	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){ 
+	$('.contact-page-right-menu UL LI:nth-child(1)').on('click',function(){
 		productInquiry.fadeOut(animation_time, function(){
 			becomePartener.fadeOut(animation_time, function(){
 				generalQuestions.fadeIn(animation_time);
 			});
 		});
 	});
-	$('.contact-page-right-menu UL LI:nth-child(2)').on('click',function(){  
+	$('.contact-page-right-menu UL LI:nth-child(2)').on('click',function(){
 		generalQuestions.fadeOut(animation_time, function(){
 			becomePartener.fadeOut(animation_time, function(){
 				productInquiry.fadeIn(animation_time);
 			});
 		});
 	});
-	$('.contact-page-right-menu UL LI:nth-child(3)').on('click',function(){  
+	$('.contact-page-right-menu UL LI:nth-child(3)').on('click',function(){
 		productInquiry.fadeOut(animation_time, function(){
 			generalQuestions.fadeOut(animation_time, function(){
 				becomePartener.fadeIn(animation_time);
@@ -264,16 +251,16 @@ $(document).ready(function(){
 		news_item_2.css('width',small_width);
 		news_item_3.css('width',big_width);
 	});
-	
 
-	var article_1 = $('#article_1'); 
+
+	var article_1 = $('#article_1');
 	var article_2 = $('#article_2');
 	var article_3 = $('#article_3');
 
 	article_1.next().show();
 	article_2.next().hide();
 	article_3.next().hide();
-	
+
 	article_1.on('click',function(){toggleWithFade(article_1.next());});
 	article_2.on('click',function(){toggleWithFade(article_2.next());});
 	article_3.on('click',function(){toggleWithFade(article_3.next());});
